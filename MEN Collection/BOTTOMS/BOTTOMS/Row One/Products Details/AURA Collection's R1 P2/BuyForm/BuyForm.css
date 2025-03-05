@@ -1,0 +1,1472 @@
+@font-face {
+  font-family: "Aisstant";
+  src: url("fonts/Aisstant.woff2") format("woff2"),
+    url("fonts/Aisstant.woff") format("woff"),
+    url("fonts/Aisstant.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Complete Header Section BuyForm Begins Here */
+.main-container-of-header {
+  display: flex;
+  justify-content: center;
+}
+.container-of-header-wrapp {
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+  padding: 1.2rem 3.8rem;
+  width: 100%;
+  max-width: calc(66rem + 52rem);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Logo Img Begins Here */
+.hlogo-img-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 980px;
+}
+
+.hlogo-img-selector {
+  width: 120px;
+  height: auto;
+}
+
+.hlogo-img-selector img {
+  width: 100%;
+}
+/* Header Logo Img End Here */
+
+/* Hidden Shoping Bag Icon Begins */
+.hidden-bag-icon span i {
+  visibility: hidden;
+}
+/* Hidden Shoping Bag Icon End */
+
+/* Shoping Bag Icon Begins */
+i.bx.bx-shopping-bag {
+  font-size: 1.7rem;
+}
+/* Shoping Bag Icon End */
+
+/* Complete Header Section BuyForm End Here */
+
+/* ===================== HEADER SECTION BEGINS ===================== */
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Logo Styles */
+.for-logo {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.for-logo img {
+  width: 120px;
+  height: auto;
+}
+
+/* Cart Icon Styles */
+.cart i {
+  font-size: 1.8rem;
+  display: contents;
+}
+
+.for-cart-1 span i {
+  visibility: hidden; /* Hidden state for cart */
+}
+
+.for-cart-2 span i {
+  /* Visible state for cart */
+}
+
+/* Header Container */
+header.main-header-wrapper {
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Header Responsive */
+@media screen and (max-width: 992px) {
+  .for-logo {
+    width: 495px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .for-logo {
+    width: 150px;
+    justify-content: center;
+  }
+  .for-logo img {
+    width: 100px;
+  }
+}
+/* ===================== HEADER SECTION END ===================== */
+
+/* ===================== CONTACT & DISCOUNT CARD BEGINS ===================== */
+/* Email Section */
+.email-input input {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Email Point Checkbox Customization Begins */
+input.checkbox {
+  height: 17px;
+  width: 17px;
+  accent-color: black;
+  transition: all 0.2s ease;
+  -moz-appearance: none;
+  /* -webkit-appearance: none; */
+  -o-appearance: none;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 2px;
+}
+
+.email-checkbox-wrap {
+  display: grid;
+  row-gap: 1rem;
+}
+.check-box {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.check-box label {
+  padding-left: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Email Point Checkbox Customization End*/
+
+/* Contact Heading CSS Begins */
+.contact-heading h2 span {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+}
+/* Contact Heading CSS End */
+
+/* Country/Region Input Section Begins */
+.delivery-heading h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.country-select-input .select {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+}
+
+.country-select-input label {
+  padding: 7px 10px 7px 15px;
+  font-family: monospace;
+  opacity: 65%;
+  font-size: 0.8rem;
+  position: absolute;
+}
+
+.delivery-wrapper {
+  gap: 15px;
+  flex-direction: column;
+  display: flex;
+}
+/* Country/Region Input Section End */
+
+/* Address Input in Delivery Form Begins */
+input.address {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+/* Address Input in Delivery Form End */
+
+/* Apartment Input in Delivery Form Begins */
+input.apartment-etc {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+/* Apartment Input in Delivery Form End */
+
+/* City & Postal Code Input in Delivery Form Begins */
+.citynpost-wrap-main {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+input.city-name {
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.postal-code {
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+/* City & Postal Code Input in Delivery Form End */
+
+/* Phone Number Input in Delivery Form Begins */
+input.phone {
+  border-right: none;
+  width: 570px;
+  height: 50px;
+  border: none;
+  /*   border-top: 1px solid rgba(165, 165, 165, 0.418);
+    border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+    border-left: 1px solid rgba(165, 165, 165, 0.418); */
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+}
+
+.for-phone {
+  display: flex;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+span.info-icon {
+  cursor: pointer;
+  margin: 0 auto;
+}
+/* Phone Number Input in Delivery Form Begins */
+
+/* Save This Info Containers CSS Begins */
+.for-phone-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.forsave-check-box {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+label.forsave-label {
+  padding-left: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input.checkbox-forsave {
+  height: 17px;
+  width: 17px;
+  accent-color: black;
+  transition: all 0.2s ease;
+  -moz-appearance: none;
+  /* -webkit-appearance: none; */
+  -o-appearance: none;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 2px;
+}
+/* Save This Info Containers CSS End */
+
+/* Phone Input & Shipping Button Main Wrap CSS Begins */
+.for-phone-wrap-main {
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+}
+
+.shipping-mathod-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+/* Phone Input & Shipping Button Main Wrap CSS End */
+
+/* Shipping Method Heading CSS Begins */
+.shipping-method-heading h3 {
+  font-family: "Assistant", sans-serif;
+}
+/* Shipping Method Heading CSS End */
+
+/* Shipping Method Button CSS Begins */
+.for-shipping-method {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 18px 10px 18px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  color: #000000e0;
+  background-color: #8f8f8f17;
+}
+
+.shipmethod-free {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Assistant", serif;
+}
+/* Shipping Method Button CSS End */
+
+/* Shipping Heading & Button Flex CSS Begins */
+.shipping-mathod-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+/* Shipping Heading & Button Flex CSS End */
+
+/* Payment Heading & Point CSS Begins */
+.payment-point p {
+  font-family: "Assistant", sans-serif;
+  color: grey;
+}
+
+.payment-heading-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.payment-card-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* Payment Heading & Point CSS End */
+
+/* Payment Heading CSS Begins */
+.payment-heading h2 {
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 0.01rem;
+  font-weight: 600;
+}
+/* Payment Heading CSS End */
+
+/* ===================== CONTACT & DISCOUNT CARD END ===================== */
+
+/* ===================== DELIVERY SECTION BEGINS ===================== */
+
+/* Main Deliver Form Wrapper Width Controll CSS Begins */
+.delivery-form-wrapper {
+  max-width: 600px;
+}
+
+.delivery-form {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+/* Main Deliver Form Wrapper Width Controll CSS Begins */
+
+/* Form Elements */
+.country-select-input .select {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+}
+
+/* Name Fields */
+.firstnlast-name-wrap-main {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+.firstnlast-name-wrap-main .first-name,
+.last-name {
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Phone Input CSS Begins */
+.for-phone {
+  display: flex;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  width: 600px;
+}
+
+input.phone {
+  width: 570px;
+  border: none;
+  padding: 10px;
+}
+
+span.info-icon {
+  cursor: pointer;
+  margin: 0 auto;
+}
+/* Phone Input CSS End */
+
+/* ===================== DELIVERY SECTION END ===================== */
+
+/* ===================== Billing Address SECTION BEGINS ===================== */
+
+/* Billing Address Heading CSS Begins */
+.billing-heading h2 {
+  font-family: "Assistant", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/* Billing Address Heading CSS End */
+
+/* Same & Different Billing Address Wrapper Main CSS Begins */
+
+/* Same as Shipping Address Button CSS Begins */
+.same {
+  font-size: 1rem;
+  font-family: "Assistant", sans-serif;
+  width: 600px;
+  height: 60px;
+  padding: 10px 18px 10px 18px;
+  align-items: center;
+  color: #000000e0;
+  display: flex;
+  align-items: center;
+  background-color: #8f8f8f17;
+  border: 1px solid black;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.same-border-remove {
+  border: 1px solid rgba(165, 165, 165, 0.418);
+}
+
+label .same-input,
+.diff-input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.diff-input:checked + span:before {
+  box-shadow: inset 0 0 0 0.455rem black;
+}
+
+.same-input:checked + span:before {
+  box-shadow: inset 0 0 0 0.455rem black;
+}
+
+.diff-span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.4s ease;
+  box-shadow: inset 0 0 0 0.1rem black;
+}
+
+.same-span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.4s ease;
+  box-shadow: inset 0 0 0 0.1rem black;
+}
+
+span.same-span {
+  align-items: center;
+  display: flex;
+}
+/* Same as Shipping Address Button CSS End */
+
+/* Different Billing Address Button CSS Begins */
+span.diff-span {
+  align-items: center;
+  display: flex;
+}
+
+.diff {
+  font-size: 1rem;
+  font-family: "Assistant", sans-serif;
+  width: 600px;
+  height: 60px;
+  padding: 10px 18px 10px 18px;
+  align-items: center;
+  color: #000000e0;
+  display: flex;
+  align-items: center;
+  background-color: #8f8f8f17;
+  border-radius: 0px 0px 5px 5px;
+  border-left: 1px solid rgba(165, 165, 165, 0.418);
+  border-right: 1px solid rgba(165, 165, 165, 0.418);
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+}
+
+.diff-border {
+  border-radius: 0px 0px 0px 0px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+/* Different Billing Address Button CSS End */
+
+/* Same & Different Billing Address Wrapper Main CSS End */
+
+/* Different Billing Address Accordion CSS Begins */
+.diff-address-wrap-main.showbilling-card {
+  content-visibility: visible;
+  transition: all 0.4sease-in;
+  width: 600px;
+}
+
+.diff-address-wrap-main {
+  content-visibility: hidden;
+}
+
+.different-address {
+  border-radius: 0px 0px 8px 8px;
+  background-color: #8f8f8f17;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+  border-left: 1px solid rgba(165, 165, 165, 0.418);
+  border-right: 1px solid rgba(165, 165, 165, 0.418);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.country-select-input-2 .select-2 {
+  width: 550px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+}
+
+.country-select-input-2 label {
+  padding: 7px 10px 7px 15px;
+  font-family: monospace;
+  opacity: 65%;
+  font-size: 0.8rem;
+  position: absolute;
+}
+
+.firstnlast-name-wrap-main-2 .first-name-2,
+.last-name-2 {
+  width: 265px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.firstnlast-name-wrap-main-2 {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+input.address-2 {
+  width: 550px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.add-icon i {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.add-apart-text {
+  font-size: 1rem;
+  color: rgb(58, 57, 57);
+}
+
+.add-apart-btn {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+span.add-icon {
+  align-items: flex-end;
+  display: flex;
+}
+
+input.apartment-etc-2 {
+  width: 550px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.citynpost-wrap-main-2 {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+input.city-name-2 {
+  width: 265px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.postal-code-2 {
+  width: 265px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.phone-2 {
+  border-right: none;
+  width: 515px;
+  height: 50px;
+  border: none;
+  /*   border-top: 1px solid rgba(165, 165, 165, 0.418);
+    border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+    border-left: 1px solid rgba(165, 165, 165, 0.418); */
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+}
+
+.for-phone-2 {
+  display: flex;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  background-color: white;
+}
+
+span.info-icon-2 {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* Different Billing Address Accordion CSS End */
+
+/* ===================== Billing Address SECTION END ===================== */
+
+/* ===================== PAYMENT SECTION BEGINS ===================== */
+
+/* COD & Billing Address Main Wrapper CSS Begins */
+.cod-wrapp-main {
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+}
+/* COD & Billing Address Main Wrapper CSS End */
+
+/* Billing Address Heading & Same & Different Button CSS Begins */
+.billing-address-wrap {
+  flex-direction: column;
+  display: flex;
+  gap: 13px;
+}
+/* Billing Address Heading & Same & Different Button CSS End */
+
+/* COD Styles */
+.cod {
+  width: 600px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  font-family: "Assistant", sans-serif;
+}
+
+/* Radio Button Customization */
+.diff-span:before,
+.same-span:before {
+  content: "";
+  background-color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  box-shadow: inset 0 0 0 0.1rem black;
+}
+
+/* Complete Order Button */
+.complete-order-btn {
+  height: 65px;
+  width: 600px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+}
+.complete-order-wrap-main {
+  margin-top: 30px;
+}
+/* ===================== PAYMENT SECTION END ===================== */
+
+/* ===================== UTILITY CLASSES BEGINS ===================== */
+.just-height {
+  height: 15px;
+}
+.just-for-height {
+  height: 40px;
+}
+.height-for-payment {
+  height: 45px;
+}
+
+.removeappart {
+  display: none;
+}
+.showappart {
+  display: block;
+}
+
+/* ===================== UTILITY CLASSES END ===================== */
+
+/* ===================== FORM VALIDATION BEGINS ===================== */
+.form-field.error .error-text {
+  display: block;
+}
+.error-text {
+  font-size: 0.875rem;
+  color: red;
+  margin: 5px 0 0;
+  display: none;
+}
+/* ===================== FORM VALIDATION END ===================== */
+
+/* ==============   PRODUCT DETAILS SECTION COMPLETE CSS CODE BEGINS  ============== */
+
+/* Product Over Quantity Badge SPAN CSS  Begins*/
+.notification .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -11px;
+  right: -7px;
+  padding: 2px 8px;
+  border-radius: 50%;
+  background-color: rgb(0 0 0 / 56%);
+  color: white;
+  font-family: "Open Sans", serif;
+}
+
+.notification {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+/* Product Over Quantity Badge SPAN CSS  End*/
+
+/* Product Img CSS Begins  */
+.product-image-wrap picture {
+  width: 64px;
+  height: 94px;
+  display: block;
+}
+
+.product-image-wrap {
+  width: 72px;
+  height: 94px;
+  display: flex;
+  border-radius: 5px;
+  border-left: 1px solid rgba(165, 165, 165, 0.418);
+  border-right: 1px solid rgba(165, 165, 165, 0.418);
+  justify-content: center;
+}
+
+.product-image-wrap picture img {
+  width: 100%;
+  height: 100%;
+}
+/* Product Img CSS End  */
+
+/* Product Image & Name & Price Wrapper Begins */
+.details-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Product Image & Name & Price Wrapper End */
+
+/* ==============   PRODUCT DETAILS SECTION COMPLETE CSS CODE END  ============== */
+
+/* ========= DIVIDING CONTACT FORM & PRODUCT DETAILS CSS BEGINS ======== */
+.main-section-wrapper {
+  grid-template-areas: "main order-summary";
+  grid-template-columns:
+    minmax(min-content, calc(calc(59rem - 52rem) / 2 + 50%))
+    1fr;
+  display: grid;
+}
+
+/* ============  Complete Contact Form CSS Begins  ============= */
+/* Contact Form Section CSS Begins */
+.contact-details-form-main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-details-selector {
+  /* width: 100%; */
+  /* max-width: 66rem; */
+  padding: 2rem;
+}
+/* Contact Form Section CSS End */
+/* ============  Complete Contact Form CSS End  ============= */
+
+/* ============  Complete Product Details Section CSS Begins  ============= */
+.product-details-form-wrap-main {
+  border-left: 1px solid rgba(165, 165, 165, 0.418);
+  background-color: rgb(250, 250, 250);
+}
+
+.product-details-form-wrap {
+  padding: 2.8rem;
+  top: 0;
+  position: sticky;
+}
+
+/* Product Name & Size CSS Begins */
+.product-name-size-wrap {
+  display: flex;
+}
+
+.name-and-size-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+p.product-name {
+  font-family: "Assistant", sans-serif;
+  font-size: 1rem;
+}
+
+.text-size {
+  height: 22px;
+}
+
+.text-size p {
+  font-family: "Assistant", sans-serif;
+  font-size: 1rem;
+  opacity: 80%;
+}
+/* Product Name & Size CSS End */
+
+/* Price Wrapper CSS Begins */
+
+.price-wrapp span {
+  font-family: "Open Sans", serif;
+  font-size: 0.9rem;
+}
+
+.price-wrapp {
+  padding-left: 1rem;
+  top: 26px;
+  position: relative;
+}
+/* Price Wrapper CSS End */
+
+/* ====== Subtotal & Shipping & Total (Text, Price) CSS Begins ===== */
+
+/* Complete Product Details WIDTH CSS Begins*/
+.product-details-form-wrap aside {
+  max-width: 455px;
+}
+/* Complete Product Details WIDTH CSS End*/
+
+/* ProductIMG, Name, Size, All Totals Wrapper GRID CSS Begins */
+.product-details-section-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 1.5rem;
+}
+/* ProductIMG, Name, Size, All Totals Wrapper GRID CSS End */
+
+/* Subtotal CSS Begins */
+.subT-main-wrapper {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.7rem;
+  row-gap: 0.7rem;
+  display: grid;
+  align-items: center;
+}
+
+span.subT-text {
+  font-family: "Open Sans", serif;
+  font-size: 0.9rem;
+}
+
+span.subT-value {
+  font-family: "Open Sans", serif;
+  font-size: 0.9rem;
+}
+
+.subT-value-wrapp {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Subtotal CSS End */
+
+/* Shipping CSS Begins */
+.shipping-wrapper-main {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.7rem;
+  row-gap: 0.7rem;
+  display: grid;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+span.shipping-text {
+  font-family: "Open Sans", serif;
+  font-size: 0.9rem;
+}
+
+span.shipping-value {
+  font-family: "Open Sans", serif;
+  font-size: 0.9rem;
+}
+
+.help-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+span.help-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.shipping-wrapp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button.help-icon-wrap {
+  border: none;
+  width: 15px;
+  height: 15px;
+}
+
+.shipping-value-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Shipping CSS End */
+
+/* Total CSS Begins */
+.total-wrapper-main {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.7rem;
+  row-gap: 0.7rem;
+  display: grid;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+span.total-text {
+  font-family: "Open Sans", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+abbr.pkr-text {
+  font-family: "Open Sans", serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.56);
+}
+
+strong.total-value {
+  font-family: "Open Sans", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.total-wrap-main {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Total CSS End */
+
+/* ====== Subtotal & Shipping & Total (Text, Price) CSS End ====== */
+
+/* ============  Complete Product Details Section CSS End  ============= */
+
+/* ========= DIVIDING CONTACT FORM & PRODUCT DETAILS CSS END ======== */
+
+/* ==========<<<<<<<<< ORDER SUMMARY SECTION ONLY DISPLAY IN 768PX BEGINS >>>>>>>>>=========== */
+
+.summary-section-main {
+  display: none;
+}
+
+.order-summary-main-wrap {
+  align-items: center;
+  height: 70px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
+  user-select: none;
+}
+
+.order-summary-selector-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.summary-text-icon-wrap {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 35px;
+}
+
+.summary-text {
+  font-family: "Assistant", serif;
+  font-size: 1rem;
+}
+
+.rotate-summary {
+  transform: rotate(180deg);
+}
+
+.summary-icon svg {
+  margin-top: 1px;
+}
+
+span.summary-icon {
+  height: 19px;
+}
+
+.summary-value {
+  font-family: "Assistant", serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+/* ==========<<<<<<<<< ORDER SUMMARY SECTION ONLY DISPLAY IN 768PX END >>>>>>>>>=========== */
+
+/* ==============<<<<COMPLETE CONTACT FORM SECTION MEDIA QUERIES BEGINS HERE>>>>============ */
+
+/* Media Queries Begins */
+
+/* Large Devices: Desktops (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  /* <<<<< FOR CONTACT FIELD MEDIA BEGINS >>>>> */
+  .email-input input {
+    width: 490px;
+  }
+  /* <<<<< FOR CONTACT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR DELIVERY SEC COUNTRY/REGION SELECT FIELD MEDIA BEGINS >>>>> */
+  .country-select-input .select {
+    width: 490px;
+  }
+  /* <<<<< FOR DELIVERY SEC COUNTRY/REGION SELECT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR FIRST&LAST NAME FIELD MEDIA BEGINS >>>>> */
+  .firstnlast-name-wrap-main .first-name,
+  .last-name {
+    width: 235px;
+  }
+  /* <<<<< FOR FIRST&LAST NAME FIELD MEDIA END >>>>> */
+
+  /* <<<<< ADDRESS FIELD MEDIA BEGINS >>>>> */
+  input.address {
+    width: 490px;
+  }
+  /* <<<<< ADDRESS FIELD MEDIA END >>>>> */
+
+  /* <<<<< APPARTMENT FIELD MEDIA BEGINS >>>>> */
+  input.apartment-etc {
+    width: 490px;
+  }
+  /* <<<<< APPARTMENT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR CITYNAME & POSTALCODE FIELD MEDIA BEGINS >>>>> */
+  input.city-name,
+  input.postal-code {
+    width: 235px;
+  }
+  /* <<<<< FOR CITYNAME & POSTALCODE FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR PHONE NUMBER FIELD MEDIA BEGINS >>>>> */
+  .for-phone {
+    width: 490px;
+  }
+  input.phone {
+    width: 460px;
+  }
+  /* <<<<< FOR PHONE NUMBER FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR SHIPPING CHARGES FIELD MEDIA BEGINS >>>>> */
+  .for-shipping-method {
+    width: 490px;
+  }
+  /* <<<<< FOR SHIPPING CHARGES FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (COD) CASH ON DELIVERY FIELD MEDIA BEGINS >>>>> */
+  .cod {
+    width: 490px;
+  }
+  /* <<<<< FOR (COD) CASH ON DELIVERY FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR SAME & DIFFERENT BILLING ADDRESS FIELD MEDIA BEGINS >>>>> */
+  .same,
+  .diff {
+    width: 490px;
+  }
+  /* <<<<< FOR SAME & DIFFERENT BILLING ADDRESS FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR COMPLETE ORDER BUTTON FIELD MEDIA BEGINS >>>>> */
+  .complete-order-btn {
+    width: 490px;
+  }
+  /* <<<<< FOR COMPLETE ORDER BUTTON FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (PRODUCT DETAILS SEC) PRICE POSITION FIELD MEDIA BEGINS >>>>> */
+  .price-wrapp {
+    top: 16px;
+  }
+  /* <<<<< FOR (PRODUCT DETAILS SEC) PRICE POSITION FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) COUNTRY/REGION FIELD MEDIA BEGINS >>>>> */
+  .country-select-input-2 .select-2 {
+    width: 440px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) COUNTRY/REGION FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) FIRST & LAST NAME FIELD MEDIA BEGINS >>>>> */
+  .firstnlast-name-wrap-main-2 .first-name-2,
+  .last-name-2 {
+    width: 210px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) FIRST & LAST NAME FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) ADDRESS FIELD MEDIA BEGINS >>>>> */
+  input.address-2 {
+    width: 440px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) ADDRESS FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) APPARTMENT FIELD MEDIA BEGINS >>>>> */
+  input.apartment-etc-2 {
+    width: 440px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) APPARTMENT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) CITY/POSTAL FIELD MEDIA BEGINS >>>>> */
+  input.city-name-2,
+  input.postal-code-2 {
+    width: 210px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) CITY/POSTAL FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) PHONE NUMBER FIELD MEDIA BEGINS >>>>> */
+  .for-phone-2 {
+    width: 440px;
+  }
+  input.phone-2 {
+    width: 405px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) PHONE NUMBER FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS MAIN WRAPPER WIDTH) MEDIA BEGINS >>>>> */
+  .diff-address-wrap-main.showbilling-card {
+    width: 490px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS MAIN WRAPPER WIDTH) MEDIA END >>>>> */
+}
+
+/* Medium Devices: Tablets in portrait mode (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* <<<<< FOR TOP HEADER WIDTH MEDIA BEGINS >>>>> */
+  .hlogo-img-wrapp {
+    width: 420px;
+  }
+  /* <<<<< FOR TOP HEADER WIDTH MEDIA END >>>>> */
+
+  /* <<<<< FOR ORDER SUMMARY MAIN WRAP DISPLAY MEDIA BEGINS >>>>> */
+  .summary-section-main {
+    display: block;
+  }
+  /* <<<<< FOR ORDER SUMMARY MAIN WRAP DISPLAY MEDIA END >>>>> */
+
+  /* <<<<< PRODUCT DETAILS WRAP MAIN HEIGHT/TRASITIONS SUMMARY MEDIA BEGINS >>>>> */
+  .product-details-form-wrap-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition-property: height;
+    will-change: height;
+    transition-duration: 0.9s;
+    transition: height 0.9s ease; /* Dono properties ko animate kare */
+    transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth timing function */
+    transition-timing-function: cubic-bezier(0.3, 0.5, 0.5, 1);
+  }
+
+  .product-details-form-wrap-main.trigger-summary {
+    max-height: 1000px;
+    opacity: 1;
+    overflow: visible;
+  }
+  /* <<<<< PRODUCT DETAILS WRAP MAIN HEIGHT/TRASITIONS SUMMARY MEDIA BEGINS >>>>> */
+
+  /* <<<<< FOR PRODUCT DETAILS WRAP MAIN WIDTH, BORDER  MEDIA BEGINS >>>>> */
+  .product-details-form-wrap {
+    padding: 1.5rem;
+  }
+  /* <<<<< FOR PRODUCT DETAILS WRAP MAIN WIDTH, BORDER  MEDIA END >>>>> */
+
+  /* <<<<< FOR CONTACT FORM & PRODUCT DETAILS WRAPP MEDIA BEGINS >>>>> */
+  .main-section-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  /* <<<<< FOR CONTACT FORM & PRODUCT DETAILS WRAPP MEDIA END >>>>> */
+
+  /* <<<<< FOR PRICE WRAP POSITION IN PRODUCT DETAILS MEDIA BEGINS >>>>> */
+  .price-wrapp {
+    top: 26px;
+  }
+  /* <<<<< FOR PRICE WRAP POSITION IN PRODUCT DETAILS MEDIA END >>>>> */
+}
+
+/* Small Devices: Smartphones in portrait mode (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  /* <<<<< FOR TOP HEADER SECTION PADDING BEGINS >>>>> */
+  .container-of-header-wrapp {
+    padding: 1.2rem 1.5rem;
+  }
+  /* <<<<< FOR TOP HEADER SECTION PADDING BEGINS >>>>> */
+
+  /* <<<<< FOR CONTACT DETAILS SECTION BEGINS >>>>> */
+  .contact-details-selector {
+    padding: 0rem;
+  }
+  /* <<<<< FOR CONTACT DETAILS SECTION END >>>>> */
+
+  /* <<<<< FOR ORDER SUMMARY BAR SECTION BEGINS >>>>> */
+  .summary-text-icon-wrap {
+    width: 220px;
+  }
+  /* <<<<< FOR ORDER SUMMARY BAR SECTION END >>>>> */
+
+  /* <<<<< PRODUCT DETAILS SECTION WRAP WIDTH BEGINS >>>>> */
+  .product-details-form-wrap aside {
+    max-width: 330px;
+  }
+  /* <<<<< PRODUCT DETAILS SECTION WRAP WIDTH END >>>>> */
+
+  /* <<<<< FOR CONTACT FIELD MEDIA BEGINS >>>>> */
+  .email-input input {
+    width: 330px;
+  }
+  /* <<<<< FOR CONTACT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR DELIVERY SEC COUNTRY/REGION SELECT FIELD MEDIA BEGINS >>>>> */
+  .country-select-input .select {
+    width: 330px;
+  }
+  /* <<<<< FOR DELIVERY SEC COUNTRY/REGION SELECT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR FIRST&LAST NAME FIELD MEDIA BEGINS >>>>> */
+  .firstnlast-name-wrap-main .first-name,
+  .last-name {
+    width: 155px;
+  }
+  /* <<<<< FOR FIRST&LAST NAME FIELD MEDIA END >>>>> */
+
+  /* <<<<< ADDRESS FIELD MEDIA BEGINS >>>>> */
+  input.address {
+    width: 330px;
+  }
+  /* <<<<< ADDRESS FIELD MEDIA END >>>>> */
+
+  /* <<<<< APPARTMENT FIELD MEDIA BEGINS >>>>> */
+  input.apartment-etc {
+    width: 330px;
+  }
+  /* <<<<< APPARTMENT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR CITYNAME & POSTALCODE FIELD MEDIA BEGINS >>>>> */
+  input.city-name,
+  input.postal-code {
+    width: 155px;
+  }
+  /* <<<<< FOR CITYNAME & POSTALCODE FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR PHONE NUMBER FIELD MEDIA BEGINS >>>>> */
+  .for-phone {
+    width: 330px;
+  }
+  input.phone {
+    width: 300px;
+  }
+  /* <<<<< FOR PHONE NUMBER FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR SHIPPING CHARGES FIELD MEDIA BEGINS >>>>> */
+  .for-shipping-method {
+    width: 330px;
+  }
+  /* <<<<< FOR SHIPPING CHARGES FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (COD) CASH ON DELIVERY FIELD MEDIA BEGINS >>>>> */
+  .cod {
+    width: 330px;
+  }
+  /* <<<<< FOR (COD) CASH ON DELIVERY FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR SAME & DIFFERENT BILLING ADDRESS FIELD MEDIA BEGINS >>>>> */
+  .same,
+  .diff {
+    width: 330px;
+  }
+  /* <<<<< FOR SAME & DIFFERENT BILLING ADDRESS FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR COMPLETE ORDER BUTTON FIELD MEDIA BEGINS >>>>> */
+  .complete-order-btn {
+    width: 330px;
+  }
+  /* <<<<< FOR COMPLETE ORDER BUTTON FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (PRODUCT DETAILS SEC) PRICE POSITION FIELD MEDIA BEGINS >>>>> */
+  .price-wrapp {
+    top: 16px;
+  }
+  /* <<<<< FOR (PRODUCT DETAILS SEC) PRICE POSITION FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) COUNTRY/REGION FIELD MEDIA BEGINS >>>>> */
+  .country-select-input-2 .select-2 {
+    width: 290px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) COUNTRY/REGION FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) FIRST & LAST NAME FIELD MEDIA BEGINS >>>>> */
+  .firstnlast-name-wrap-main-2 .first-name-2,
+  .last-name-2 {
+    width: 135px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) FIRST & LAST NAME FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) ADDRESS FIELD MEDIA BEGINS >>>>> */
+  input.address-2 {
+    width: 290px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) ADDRESS FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) APPARTMENT FIELD MEDIA BEGINS >>>>> */
+  input.apartment-etc-2 {
+    width: 290px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) APPARTMENT FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) CITY/POSTAL FIELD MEDIA BEGINS >>>>> */
+  input.city-name-2,
+  input.postal-code-2 {
+    width: 135px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) CITY/POSTAL FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) PHONE NUMBER FIELD MEDIA BEGINS >>>>> */
+  .for-phone-2 {
+    width: 290px;
+  }
+  input.phone-2 {
+    width: 255px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS) PHONE NUMBER FIELD MEDIA END >>>>> */
+
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS MAIN WRAPPER WIDTH) MEDIA BEGINS >>>>> */
+  .diff-address-wrap-main.showbilling-card {
+    width: 330px;
+  }
+  /* <<<<< FOR (DIFFERENT BILLING ADDRESS MAIN WRAPPER WIDTH) MEDIA END >>>>> */
+}
+
+/* Media Queries End */
+
+/* ==============<<<<COMPLETE CONTACT FORM SECTION MEDIA QUERIES END HERE>>>>============ */

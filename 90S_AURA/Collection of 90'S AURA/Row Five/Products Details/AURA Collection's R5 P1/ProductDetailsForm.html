@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="ProductDetailsForm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!--Main Container Of Webpage Begins-->
+
+      <!-- Item Cart Off-Canvas Begins Here -->
+      <div class="icart-of-canvas">
+        <!-- Item Cart Off-Canvas Header & Icon Btn Begins Here -->
+        <div class="icart-text-and-icon">
+          <h3><span class="icart-text">CART</span></h3>
+          <button class="btn-close-icart">
+            <span class="close-icart-i"><i class="bx bx-x"></i></span>
+          </button>
+        </div>
+        <!-- Item Cart Off-Canvas Header & Icon Btn End Here -->
+
+        <!-- Item Cart Off-Canvas Item Cart Begins Here -->
+        <div class="for-icart-grid">
+          <div class="cart-item-main">
+            <div class="cart-item-wrap">
+              <div class="cart-wrapp-selector">
+                <div class="cart-wrapper">
+                  <!-- Item Cart Off-Canvas Item Image Wrapp Begins Here -->
+                  <div class="icart-img-main-wrapp">
+                    <div class="icart-img-selector">
+                      <div class="icart-img-wrap">
+                        <img src="Images/a1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item Cart Off-Canvas Item Image Wrapp End Here -->
+
+                  <!-- Item Cart Content Begins Here -->
+                  <div class="icart-content-main-wrapp">
+                    <div class="icart-content-selector">
+                      <!-- Item Name Code Begins Here -->
+                      <div class="icart-item-name-wrapp">
+                        <div class="icart-item-name">
+                          <h4>
+                            <a href="#">Button Down Denim Shirt - Black</a>
+                          </h4>
+                        </div>
+                      </div>
+                      <!-- Item Name Code End Here -->
+
+                      <!-- Item Size Code Begins Here -->
+                      <div class="icart-size-main-wrapp">
+                        <div class="icart-size-selector">
+                          <div class="icart-size">
+                            <p class="item-size-wrap">
+                              <strong class="icart-size-text">Size:</strong>
+                              <span class="icart-size-name"></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item Size Code End Here -->
+
+                      <!-- Item Price Code Begins Here -->
+                      <div class="icart-price-main-wrapp">
+                        <div class="icart-size-selector">
+                          <div class="icart-price-wrapp">
+                            <p class="icart-pprice">Rs.4,350</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Item Price Code End Here -->
+
+                      <!-- Item Cart Quantity Code Begins Here -->
+                      <div class="icart-quantity-main-wrapp">
+                        <div class="icart-quantity-selector">
+                          <quantity-counter
+                            class="cart__quantity-counter"
+                            data-price="3850"
+                          >
+                            <div class="icart__quantity">
+                              <button
+                                class="icart__quantity-minus"
+                                type="button"
+                                name="decrease"
+                                onclick="decreaseQuantity(this)"
+                              >
+                                <i class="bx bx-minus"></i>
+                              </button>
+                              <input
+                                class="icart__quantity-field"
+                                type="number"
+                                id="quantity"
+                                name="updates[]"
+                                value="1"
+                                pattern="[0-9]*"
+                                readonly=""
+                              />
+
+                              <button
+                                class="icart__quantity-plus"
+                                type="button"
+                                name="increase"
+                                onclick="increaseQuantity(this)"
+                              >
+                                <i class="bx bx-plus"></i>
+                              </button>
+                            </div>
+                          </quantity-counter>
+                          <!-- Remove Code Here -->
+                          <div class="remove-btn-wrap">
+                            <div class="remove-selector">
+                              <a href="">Remove</a>
+                            </div>
+                          </div>
+                          <!-- Remove code End Here -->
+                        </div>
+                      </div>
+                      <!-- Item Cart Quantity Code End Here -->
+                    </div>
+                  </div>
+                  <!-- Item Cart Content End Here -->
+                </div>
+              </div>
+              <!-- Item Cart Bottom Code Begins Here -->
+              <div class="icart-bottom-main">
+                <div class="icart-bottom-wrapp">
+                  <div class="icart-bottom-selector">
+                    <!-- Item Cart Add Order Notes Code Begins Here  -->
+                    <div class="addodr-note-main">
+                      <div class="addodr-note-wrapp">
+                        <div class="addodr-note-selector">
+                          <form action="">
+                            <details class="add-order">
+                              <summary class="add-order-text">
+                                Add order notes
+                                <span class="icart-note-icon-wrap">
+                                  <i
+                                    class="bx bx-plus note-plus"
+                                    id="note-plus"
+                                  ></i>
+                                  <i
+                                    class="bx bx-minus note-minus"
+                                    id="note-minus"
+                                  ></i>
+                                </span>
+                              </summary>
+                              <!-- Note Text Area Code Begins Here -->
+                              <div class="note-text-area-main">
+                                <div class="note-text-area-wrapp">
+                                  <label class="label-fornote" for="note"
+                                    >Leave a note about your order</label
+                                  >
+                                  <textarea name="note" id="note"></textarea>
+                                </div>
+                              </div>
+                              <!-- Note Text Area Code End Here -->
+                            </details>
+                            <!-- Subtotal & Checkout Code Begins Here -->
+                            <div class="subtotal-checkout-main">
+                              <div class="subtotal-checkout-selector">
+                                <div class="subtotal-checkout-wrapp">
+                                  <!-- Subtotal Code Begins Here -->
+                                  <div class="subtotal-main-wrapp">
+                                    <div class="subtotal-selector">
+                                      <span class="subtotal-text"
+                                        >subtotal</span
+                                      >
+                                      <span class="subtotal-price"
+                                        >Rs.3,850</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <!-- Subtotal Code End Here -->
+                                  <!-- Checkout Code Begins Here -->
+                                  <div class="checkout-main">
+                                    <div class="checkout-selector">
+                                      <div class="checkout-wrapp">
+                                        <fieldset class="checkout-btn-fieldset">
+                                          <button
+                                            type="submit"
+                                            name="checkout"
+                                            class="checkout-btn"
+                                          >
+                                            Check Out
+                                          </button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Checkout Code End Here -->
+                                </div>
+                              </div>
+                              <em class="emph-note"
+                                >Shipping, taxes, and discount codes are
+                                calculated at checkout</em
+                              >
+                            </div>
+                            <!-- Subtotal & Checkout Code End Here -->
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item Cart Add Order Notes Code End Here  -->
+                  </div>
+                </div>
+              </div>
+              <!-- Item Cart Bottom Code End Here -->
+            </div>
+          </div>
+        </div>
+        <!-- Item Cart Off-Canvas Item Cart End Here -->
+      </div>
+      <!-- Item Cart Off-Canvas End Here -->
+
+      <!--Head Section Begins-->
+      <div class="header-section">
+        <p>Free Delivery Nationwide</p>
+      </div>
+      <!--Head Section End-->
+
+      <!--Navigation Begins-->
+
+      <div class="header-wrapper">
+        <!--Header Wrapper div Begins-->
+
+        <div class="section-padding">
+          <!--Section padding div Begins-->
+
+          <div class="mobile-header">
+            <!--mobile header div Begins-->
+
+            <div id="mySidenav" class="header-mobile-left">
+              <div class="closebtn"><i class="bx bx-x"></i></div>
+
+              <div class="sidebar-wrapper">
+                <div class="slider-wrapper">
+                  <a href="../../../../../Index.html">HOME</a>
+                </div>
+              </div>
+
+              <div class="sidebar-wrapper">
+                <div class="slider-wrapper">
+                  <a href="../../../../90sAura.html">90'S AURA</a>
+                </div>
+                <div class="slider-wrapper">
+                  <a href="#">SPIRING COLLECTION'24</a>
+                </div>
+
+                <div class="slider-wrapper" id="men">
+                  <a href="#">MEN <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+              </div>
+
+              <!-- For MEN Submenu Begins -->
+              <div class="men-submenu">
+                <div class="back-men" id="back-men">
+                  <a href="#"> <i class="bx bx-left-arrow-alt"></i> MEN </a>
+                </div>
+                <div><a href="#">DENIM JEANS</a></div>
+                <div><a href="jackets.html">DENIM JECKTES</a></div>
+                <div><a href="#">DENIM SHIRTS</a></div>
+                <div><a href="#">SHORTS</a></div>
+                <div><a href="#">BOTTOMS</a></div>
+              </div>
+              <!-- For NEN Submenu End -->
+
+              <div class="sidebar-wrapper">
+                <div class="slider-wrapper" id="accessories">
+                  <a href="#"
+                    >ACCESSORIES <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+
+              <!-- For ACCESSORIES Submenu Begins -->
+              <div class="accessories-submenu">
+                <div class="back-accessories" id="back-accessories">
+                  <a href="#">
+                    <i class="bx bx-left-arrow-alt"></i> ACCESSORIES
+                  </a>
+                </div>
+                <div><a href="#">LAPTOP SLEEVES</a></div>
+                <div><a href="#">BAGS</a></div>
+                <div><a href="#">HANDBAG & CLUTCHES</a></div>
+                <div><a href="#">JA NAMAZ</a></div>
+              </div>
+              <!-- For ACCESSORIES Submenu End -->
+
+              <div class="sidebar-wrapper">
+                <div class="slider-wrapper" id="kid">
+                  <a href="#">KIDS <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+              </div>
+
+              <!-- For KIDS Submenu Begins -->
+              <div class="kid-submenu">
+                <div class="back-kid" id="back-kid">
+                  <a href="#"> <i class="bx bx-left-arrow-alt"></i> KIDS </a>
+                </div>
+                <div><a href="#">BOYS</a></div>
+                <div><a href="#">GIRLS</a></div>
+              </div>
+              <!-- For KIDS Submenu End -->
+
+              <div class="sidebar-wrapper">
+                <div class="slider-wrapper"><a href="#">CONTACT</a></div>
+                <div class="slider-wrapper"><a href="#">SHOP</a></div>
+              </div>
+            </div>
+
+            <div class="for-search">
+              <!--For Search div begins-->
+              <button style="cursor: pointer" class="open-nav">
+                <span class="menu-icon open-nav"
+                  ><i class="bx bx-menu"></i
+                ></span>
+              </button>
+              <button style="font-size: 1.7rem" class="search-icon">
+                <i class="bx bx-search"></i>
+              </button>
+            </div>
+            <!--For Search div End-->
+
+            <!-- For Search Bar Begins -->
+
+            <div class="for-search-bar-wrap-main">
+              <div class="for-search-bar-wrap">
+                <div class="for-search-bar">
+                  <span class="search-icon-for-bar"
+                    ><i class="bx bx-search"></i
+                  ></span>
+                  <input
+                    type="search"
+                    name=""
+                    id="mySearch"
+                    placeholder="Search"
+                  />
+                  <span class="close-icon-bar"><i class="bx bx-x"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- For Search Bar End -->
+
+            <div class="header-logo-image">
+              <img src="CreativeMoizLogo.png" alt="" />
+            </div>
+
+            <div class="header-mobile-right">
+              <button class="bag">
+                <i
+                  class="bx bx-shopping-bag"
+                  style="font-size: 25px; color: rgb(153, 153, 153)"
+                ></i>
+              </button>
+            </div>
+          </div>
+          <!--mobile header div End-->
+        </div>
+        <!--Section padding div End-->
+      </div>
+      <!--Header Wrapper div End-->
+      <!--Navigation End-->
+
+      <!-- For SearchBar Filter Items & LoadingBar Animations Begins -->
+      <div class="loading-bar"></div>
+      <!-- For SearchBar Filter Items & LoadingBar Animations End -->
+
+      <!-- For Cart Off-Canvas Begins -->
+
+      <div class="for-cartofcanvas-wrap-main">
+        <div class="for-cartofcanvas-wrap">
+          <div class="for-cartofcanvas">
+            <div class="cart-of-canvas">
+              <div class="cart-text-and-icon">
+                <h3><span class="cart-text">CART</span></h3>
+                <button class="btn-close-cart">
+                  <span class="close-cart-i"><i class="bx bx-x"></i></span>
+                </button>
+              </div>
+
+              <div class="cart-sidebar-wrap-main">
+                <div class="cart-sidebar-wrap">
+                  <div class="cart-sidebar-menu">
+                    <div class="cart-submenu-wrap-main">
+                      <div class="cart-submenu-wrap">
+                        <div class="cart-submenu">
+                          <div class="empty-cart-wrap">
+                            <div class="empty-cart">
+                              <p class="empty-cart-text">Your Cart is Empty</p>
+                            </div>
+                          </div>
+
+                          <div class="for-cart-grid">
+                            <div class="cart-home cart-btn">
+                              <a
+                                class="wh homeb"
+                                href="../../../../../Index.html"
+                                ><span class="btn-anima-1">Home</span></a
+                              >
+                            </div>
+                            <div class="cart-aura cart-btn">
+                              <a
+                                class="wh aurab"
+                                href="../../../../90sAura.html"
+                                ><span class="btn-anima-2">90`S AURA</span></a
+                              >
+                            </div>
+                            <div class="cart-collection cart-btn">
+                              <a class="wh springb" href="#"
+                                ><span class="btn-anima-3"
+                                  >Spiring <span>Collection`24</span></span
+                                ></a
+                              >
+                            </div>
+                            <div class="cart-men cart-btn">
+                              <a class="wh menb" href="#"
+                                ><span class="btn-anima-4">Men</span></a
+                              >
+                            </div>
+                            <div class="cart-accessories cart-btn">
+                              <a class="wh accessoriesb" href="#"
+                                ><span class="btn-anima-5">Accessories</span></a
+                              >
+                            </div>
+                            <div class="cart-chapter cart-btn">
+                              <a class="wh chapterb" href="#"
+                                ><span class="btn-anima-6">Chapter 1</span></a
+                              >
+                            </div>
+                            <div class="cart-kids cart-btn">
+                              <a class="wh kidsb" href="#"
+                                ><span class="btn-anima-7">Kids</span></a
+                              >
+                            </div>
+                            <div class="cart-kids cart-btn">
+                              <a class="wh contactb" href="#"
+                                ><span class="btn-anima-8">Contact</span></a
+                              >
+                            </div>
+                            <div class="cart-shop cart-btn">
+                              <a class="wh shopb" href="#"
+                                ><span class="btn-anima-9">Shop</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For Cart Off-Canvas End -->
+
+      <!-- Product Details Like! Size, Quantity, Section Begins Here -->
+
+      <div class="main-product-details-wrapp">
+        <div class="product-details-wrapper">
+          <div class="product-wrapper-inner">
+            <div class="product-page">
+              <!-- Product Images Section Here -->
+              <product-images class="product-images">
+                <zoom-images class="product-single-image">
+                  <!-- Silde 1 Begins -->
+                  <div class="product-slide mySlides" id="mySlides">
+                    <div class="product-photo">
+                      <figure class="image-wrapper">
+                        <img src="Images/a1.jpg" alt="" />
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Silde 1 End -->
+                  <!-- Silde 2 Begins -->
+                  <div class="product-slide mySlides" id="mySlides">
+                    <div class="product-photo">
+                      <figure class="image-wrapper">
+                        <img src="Images/a2.jpg" alt="" />
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Silde 2 End -->
+                  <!-- Silde 3 Begins -->
+                  <div class="product-slide mySlides" id="mySlides">
+                    <div class="product-photo">
+                      <figure class="image-wrapper">
+                        <img src="Images/a3.jpg" alt="" />
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Silde 3 End -->
+                  <!-- Silde 4 Begins -->
+                  <div class="product-slide mySlides" id="mySlides">
+                    <div class="product-photo">
+                      <figure class="image-wrapper">
+                        <img src="Images/a4.jpg" alt="" />
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Silde 4 End -->
+                  <!-- Silde 5 Begins -->
+                  <div class="product-slide mySlides" id="mySlides">
+                    <div class="product-photo">
+                      <figure class="image-wrapper">
+                        <img src="Images/a5.jpg" alt="" />
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Silde 5 End -->
+                  <!-- Silde 6 Begins -->
+                  <div class="product-slide mySlides" id="mySlides">
+                    <div class="product-photo">
+                      <figure class="image-wrapper">
+                        <img src="Images/a6.jpg" alt="" />
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- Silde 6 End -->
+                  <div class="prev-next-wrap">
+                    <a class="prev"><i class="bx bx-arrow-back"></i></a>
+                    <a class="next"><i class="bx bx-arrow-back"></i></a>
+                  </div>
+                </zoom-images>
+
+                <product-thumbs class="product-thumbs">
+                  <div class="product-thumb-holder">
+                    <!-- Thumbnail Index 1 Begins -->
+                    <div class="product-thumb-wrap is-active">
+                      <a href="#" class="product-thumb-link">
+                        <figure class="thumb-img-wrap">
+                          <img src="Images/a1.jpg" alt="" />
+                        </figure>
+                      </a>
+                    </div>
+                    <!-- Thumbnail Index 1 End  -->
+                    <!-- Thumbnail Index 2 Begins -->
+                    <div class="product-thumb-wrap is-active">
+                      <a href="#" class="product-thumb-link">
+                        <figure class="thumb-img-wrap">
+                          <img src="Images/a2.jpg" alt="" />
+                        </figure>
+                      </a>
+                    </div>
+                    <!-- Thumbnail Index 2 End  -->
+
+                    <!-- Thumbnail Index 3 Begins -->
+                    <div class="product-thumb-wrap is-active">
+                      <a href="#" class="product-thumb-link">
+                        <figure class="thumb-img-wrap">
+                          <img src="Images/a3.jpg" alt="" />
+                        </figure>
+                      </a>
+                    </div>
+                    <!-- Thumbnail Index 3 End  -->
+                    <!-- Thumbnail Index 4 Begins -->
+                    <div class="product-thumb-wrap is-active">
+                      <a href="#" class="product-thumb-link">
+                        <figure class="thumb-img-wrap">
+                          <img src="Images/a4.jpg" alt="" />
+                        </figure>
+                      </a>
+                    </div>
+                    <!-- Thumbnail Index 4 End  -->
+                    <!-- Thumbnail Index 5 Begins -->
+                    <div class="product-thumb-wrap is-active">
+                      <a href="#" class="product-thumb-link">
+                        <figure class="thumb-img-wrap">
+                          <img src="Images/a5.jpg" alt="" />
+                        </figure>
+                      </a>
+                    </div>
+                    <!-- Thumbnail Index 5 End  -->
+                    <!-- Thumbnail Index 6 Begins -->
+                    <div class="product-thumb-wrap is-active">
+                      <a href="#" class="product-thumb-link">
+                        <figure class="thumb-img-wrap">
+                          <img src="Images/a6.jpg" alt="" />
+                        </figure>
+                      </a>
+                    </div>
+                    <!-- Thumbnail Index 6 End  -->
+                  </div>
+                </product-thumbs>
+              </product-images>
+              <!-- Product Images Section End Here -->
+
+              <!-- Product Content Begins Here -->
+              <div class="product-content">
+                <div class="form-wrapper">
+                  <div class="form-width">
+                    <!-- Product Heading Title Begins -->
+                    <div class="product-head">
+                      <div class="product-title-wrapp">
+                        <h1>Button Down Denim Shirt - Black</h1>
+                      </div>
+                    </div>
+                    <!-- Product Heading Title Begins -->
+
+                    <form id="myForm" action="BuyForm/BuyForm.html">
+                      <!-- Product Price Code Begins -->
+                      <div class="product-price-main">
+                        <div class="product-price-wrap">
+                          <div class="product-price">
+                            <span id="pprice" class="pprice">Rs.3,850</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Product Price Code Begins -->
+
+                      <!-- Size Chart Code Begins -->
+                      <div class="size-chart-icon-main">
+                        <div class="size-chart-wrapp">
+                          <button class="chart-button">
+                            <img src="Size Chart Icon.png" alt="" />
+                            <span>Size Chart</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- Size Chart Code Begins -->
+
+                      <!-- Product Details Form Like, Size, Quantity Add To Cart, And Buy Button Begins -->
+                      <!--                         <form id="myForm" action="BuyForm/BuyForm.html"> -->
+                      <div class="product-form-outer">
+                        <div class="product-selector">
+                          <div class="product-selector-wrapper">
+                            <span class="size-text">Size</span>
+                            <!-- <small class="size">Extra Large</small> -->
+                            <input
+                              class="size"
+                              type="text"
+                              id="size"
+                              name="size"
+                              placeholder="Size"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="size-radio-button-wrapper">
+                          <div class="radio__button">
+                            <input
+                              checked=""
+                              type="radio"
+                              id="type1"
+                              name="type"
+                              value="Extra Small"
+                            />
+                            <label
+                              class="label-for-size"
+                              data-icon="XS"
+                              for="type1"
+                              ><p class="size-opt">XS</p></label
+                            >
+                          </div>
+
+                          <div class="radio__button">
+                            <input
+                              checked=""
+                              type="radio"
+                              id="type2"
+                              name="type"
+                              value="Small"
+                            />
+                            <label
+                              class="label-for-size"
+                              data-icon="S"
+                              for="type2"
+                              ><p class="size-opt">S</p></label
+                            >
+                          </div>
+
+                          <div class="radio__button">
+                            <input
+                              checked=""
+                              type="radio"
+                              id="type3"
+                              name="type"
+                              value="Medium"
+                            />
+                            <label
+                              class="label-for-size"
+                              data-icon="M"
+                              for="type3"
+                              ><p class="size-opt">M</p></label
+                            >
+                          </div>
+
+                          <div class="radio__button">
+                            <input
+                              checked=""
+                              type="radio"
+                              id="type4"
+                              name="type"
+                              value="Large"
+                            />
+                            <label
+                              class="label-for-size"
+                              data-icon="L"
+                              for="type4"
+                              ><p class="size-opt">L</p></label
+                            >
+                          </div>
+
+                          <div class="radio__button">
+                            <input
+                              checked=""
+                              type="radio"
+                              id="type5"
+                              name="type"
+                              value="Extra Large"
+                            />
+                            <label
+                              class="label-for-size"
+                              data-icon="XL"
+                              for="type5"
+                              ><p class="size-opt">XL</p></label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="product-form-wrapper-main">
+                        <div class="product-form-wrapper">
+                          <div class="produt-form-width">
+                            <div class="product-form">
+                              <button
+                                type="button"
+                                id="border"
+                                class="quantity-wrapper select"
+                              >
+                                <span class="qnty-val">
+                                  <input
+                                    type="number"
+                                    id="quantity"
+                                    name="quantity"
+                                    placeholder="Quantity"
+                                  /> </span
+                                ><i
+                                  id="rotate-quantity"
+                                  class="bx bx-chevron-down"
+                                ></i>
+                              </button>
+                            </div>
+
+                            <ul class="options-list">
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">1</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">2</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">3</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">4</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">5</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">6</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">7</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">8</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">9</p>
+                                  </div></a
+                                >
+                              </li>
+
+                              <li class="qntity-item border">
+                                <a
+                                  ><div class="for-value">
+                                    <p class="option">10</p>
+                                  </div></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+
+                          <button class="addtocart-btn" type="submit">
+                            <span class="btn-text">ADD TO CART</span>
+                          </button>
+                        </div>
+
+                        <button class="buy-now-btn">
+                          <a href="BuyForm/BuyForm.html">
+                            <span class="buy-btn-text">BUY IT NOW</span>
+                          </a>
+                        </button>
+                      </div>
+                    </form>
+                    <!-- Product Details Form Like, Size, Quantity Add To Cart, And Buy Button End -->
+
+                    <!-- Product Descrption Begins Here -->
+                    <div class="product-tabs-main">
+                      <div class="product-tabs-wrapp">
+                        <div class="product-tabs-selector">
+                          <ul class="description-head-wrap">
+                            <li class="description-head">
+                              <span class="description-text">DESCRIPTION</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="tabs-content-wrapp">
+                        <div class="tabs-content-holder">
+                          <div class="tabs-content-inner">
+                            <div class="tabs-content-selector">
+                              <ul>
+                                <li>
+                                  STRAIGHT-FIT CARGO JEANS WITH FRONT PATCH
+                                  POCKETS.
+                                </li>
+                                <li>
+                                  CARGO POCKETS ON THIGH WITH SNAP BUTTON.
+                                </li>
+                                <li>FRONT ZIP FLY WITH FASTENING BUTTON.</li>
+                                <li>NON STRETCH DENIM FABRIC.</li>
+                                <li>100% COTTON.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product Descrption End Here -->
+                  </div>
+                </div>
+              </div>
+              <!-- Product Content End Here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Details Like! Size, Quantity, Section End Here -->
+
+      <!-- Complete Related & Recently Viewed Tabs Begins -->
+
+      <!-- Related & Recently Veiwed Tabs Heading End -->
+      <div class="tabs-header-wrapper">
+        <div class="tabs-header-width">
+          <div class="tab-headings">
+            <ul>
+              <li class="related" id="text-related">
+                <span class="tabs-text-related">RELATED PRODUCTS</span>
+              </li>
+              <li class="recently" id="text-recent">
+                <span class="tabs-text-recent">RECENTLY VIEWED</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Related & Recently Veiwed Tabs Heading End -->
+
+      <!-- Collection Of Related Products Tab Begins -->
+      <div class="main-related-card-wrapper">
+        <div
+          class="related-card-wrapper product-card"
+          data-name="Straight Fit Cargo Pocket Jeans Tint Over Dye"
+          data-price="4350"
+          style="display: block"
+        >
+          <div class="container-1">
+            <img
+              src="Images/Related Tab Collection/a1.webp"
+              alt="Avatar"
+              class="image"
+            />
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <a href="Denim Shirts/Button Down Over Shirt/addindex.html">
+                  <img
+                    src="Images/Related Tab Collection/a2.webp"
+                    alt="Avatar"
+                    class="image"
+                  />
+                </a>
+
+                <div class="overlay-2">
+                  <a href="Denim Shirts/Button Down Over Shirt/addindex.html">
+                    <button class="text-2">QUICK BUY</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p>
+              <a href="Denim Shirts/Button Down Over Shirt/addindex.html"
+                >Straight Fit Cargo Pocket Jeans Tint Over Dye</a
+              >
+            </p>
+          </div>
+
+          <div class="price">
+            <span
+              ><a href="Denim Shirts/Button Down Over Shirt/addindex.html"
+                >Rs.4,350</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div
+          class="related-card-wrapper product-card"
+          data-name="Denim Over Shirt With Pockets - Mid Blue"
+          data-price="3900"
+          style="display: block"
+        >
+          <div class="container-1">
+            <a href="Denim Shirts/For Demo/demo.html"
+              ><img
+                src="Images/Related Tab Collection/b1.webp"
+                alt="Avatar"
+                class="image"
+            /></a>
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <a href="Denim Shirts/For Demo/demo.html"
+                  ><img
+                    src="Images/Related Tab Collection/b2.webp"
+                    alt="Avatar"
+                    class="image"
+                  />
+                </a>
+
+                <div class="overlay-2">
+                  <a href="Denim Shirts/For Demo/demo.html">
+                    <button class="text-2">QUICK BUY</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p>
+              <a href="Denim Shirts/For Demo/demo.html"
+                >Denim Over Shirt With Pockets - Mid Blue</a
+              >
+            </p>
+          </div>
+
+          <div class="price">
+            <span><a href="Denim Shirts/For Demo/demo.html">Rs.3,900</a></span>
+          </div>
+        </div>
+
+        <div
+          class="related-card-wrapper product-card"
+          data-name="Denim Over Shirt With Flap Pockets Overdyed"
+          data-price="4700"
+          style="display: block"
+        >
+          <div class="container-1">
+            <img
+              src="Images/Related Tab Collection/c1.webp"
+              alt="Avatar"
+              class="image"
+            />
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <img
+                  src="Images/Related Tab Collection/c2.webp"
+                  alt="Avatar"
+                  class="image"
+                />
+
+                <div class="overlay-2">
+                  <a href="#"> <button class="text-2">QUICK BUY</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p>
+              <a href="#buy">Denim Over Shirt With Flap Pockets Overdyed</a>
+            </p>
+          </div>
+
+          <div class="price">
+            <span><a href="#">Rs.4,700</a></span>
+          </div>
+        </div>
+
+        <div
+          class="related-card-wrapper product-card"
+          data-name="Denim Over Shirt With Flap Pockets -  Dark Blue"
+          data-price="4700"
+          style="display: block"
+        >
+          <div class="container-1">
+            <img
+              src="Images/Related Tab Collection/d1.webp"
+              alt="Avatar"
+              class="image"
+            />
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <img
+                  src="Images/Related Tab Collection/d2.webp"
+                  alt="Avatar"
+                  class="image"
+                />
+
+                <div class="overlay-2">
+                  <a href="#"> <button class="text-2">QUICK BUY</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p>
+              <a href="#buy">Denim Over Shirt With Flap Pockets - Dark Blue</a>
+            </p>
+          </div>
+
+          <div class="price">
+            <span><a href="#">Rs.4,700</a></span>
+          </div>
+        </div>
+      </div>
+      <!-- Collection Of Related Products Tab End -->
+
+      <!-- Collection Of Recently Products Tab Begins -->
+      <div class="main-recent-card-wrapper">
+        <div
+          class="recent-card-wrapper product-card"
+          data-name="Single Zip Back pack Tint Over Dyed"
+          data-price="3400"
+          style="display: block"
+        >
+          <div class="container-1">
+            <img
+              src="Images/Recent Tab Collection/a1.webp"
+              alt="Avatar"
+              class="image"
+            />
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <a href="Denim Shirts/Button Down Over Shirt/addindex.html">
+                  <img
+                    src="Images/Recent Tab Collection/a2.webp"
+                    alt="Avatar"
+                    class="image"
+                  />
+                </a>
+
+                <div class="overlay-2">
+                  <a href="Denim Shirts/Button Down Over Shirt/addindex.html">
+                    <button class="text-2">QUICK BUY</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p>
+              <a href="Denim Shirts/Button Down Over Shirt/addindex.html"
+                >Single Zip Back pack Tint Over Dyed</a
+              >
+            </p>
+          </div>
+
+          <div class="price">
+            <span
+              ><a href="Denim Shirts/Button Down Over Shirt/addindex.html"
+                >Rs.3,400</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div
+          class="recent-card-wrapper product-card"
+          data-name="Baggy Fit - Pale Blue"
+          data-price="4100"
+          style="display: block"
+        >
+          <div class="container-1">
+            <a href="Denim Shirts/For Demo/demo.html"
+              ><img
+                src="Images/Recent Tab Collection/b1.webp"
+                alt="Avatar"
+                class="image"
+            /></a>
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <a href="Denim Shirts/For Demo/demo.html"
+                  ><img
+                    src="Images/Recent Tab Collection/b2.webp"
+                    alt="Avatar"
+                    class="image"
+                  />
+                </a>
+
+                <div class="overlay-2">
+                  <a href="Denim Shirts/For Demo/demo.html">
+                    <button class="text-2">QUICK BUY</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p>
+              <a href="Denim Shirts/For Demo/demo.html"
+                >Baggy Fit - Pale Blue</a
+              >
+            </p>
+          </div>
+
+          <div class="price">
+            <span><a href="Denim Shirts/For Demo/demo.html">Rs.4,100</a></span>
+          </div>
+        </div>
+
+        <div
+          class="recent-card-wrapper product-card"
+          data-name="Straight Leg Cargo Jeans - Black Wash"
+          data-price="4450"
+          style="display: block"
+        >
+          <div class="container-1">
+            <img
+              src="Images/Recent Tab Collection/c1.webp"
+              alt="Avatar"
+              class="image"
+            />
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <img
+                  src="Images/Recent Tab Collection/c2.webp"
+                  alt="Avatar"
+                  class="image"
+                />
+
+                <div class="overlay-2">
+                  <a href="#"> <button class="text-2">QUICK BUY</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p><a href="#buy">Straight Leg Cargo Jeans - Black Wash</a></p>
+          </div>
+
+          <div class="price">
+            <span><a href="#">Rs.4,450</a></span>
+          </div>
+        </div>
+
+        <div
+          class="recent-card-wrapper product-card"
+          data-name="Straight Leg Cargo Jeans - Faded Grey"
+          data-price="4450"
+          style="display: block"
+        >
+          <div class="container-1">
+            <img
+              src="Images/Recent Tab Collection/d1.webp"
+              alt="Avatar"
+              class="image"
+            />
+
+            <div class="overlay-1">
+              <div class="container-2">
+                <img
+                  src="Images/Recent Tab Collection/d2.webp"
+                  alt="Avatar"
+                  class="image"
+                />
+
+                <div class="overlay-2">
+                  <a href="#"> <button class="text-2">QUICK BUY</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <p><a href="#buy">Straight Leg Cargo Jeans - Faded Grey</a></p>
+          </div>
+
+          <div class="price">
+            <span><a href="#">Rs.4,450</a></span>
+          </div>
+        </div>
+      </div>
+      <!-- Collection Of Recently Products Tab End -->
+
+      <!-- Complete Related & Recently Viewed Tabs End -->
+
+      <!--Footer Begins-->
+
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h2>Quick Links</h2>
+            <ul class="links">
+              <li><a href="../../../../../Index.html">Home</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h2>Policies</h2>
+            <ul class="links">
+              <li><a href="#">Return & Shipping Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h2>Social</h2>
+
+            <div class="icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h2>Newsletter</h2>
+            <p>
+              Subscribe to get special offers, free giveaways, and
+              once-in-a-lifetime deals.
+            </p>
+
+            <form action="#">
+              <input type="text" placeholder="Email" required />
+              <button type="submit">JOIN</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer End-->
+    </div>
+    <!--Main Container Of Webpage End-->
+  </body>
+</html>
+
+<script src="ProductDetailsForm.js"></script>
+<script src="ProductDetailsFormJquery.js"></script>

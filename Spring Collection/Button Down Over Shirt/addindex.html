@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="addindex.css" />
+    <script src="addindex.js"></script>
+  </head>
+  <body>
+    <!-- Item Cart Off-Canvas Begins Here -->
+    <div class="icart-of-canvas">
+      <!-- Item Cart Off-Canvas Header & Icon Btn Begins Here -->
+      <div class="icart-text-and-icon">
+        <h3><span class="icart-text">CART</span></h3>
+        <button class="btn-close-icart">
+          <span class="close-icart-i"><i class="bx bx-x"></i></span>
+        </button>
+      </div>
+      <!-- Item Cart Off-Canvas Header & Icon Btn End Here -->
+
+      <!-- Item Cart Off-Canvas Item Cart Begins Here -->
+      <div class="for-icart-grid">
+        <div class="cart-item-main">
+          <div class="cart-item-wrap">
+            <div class="cart-wrapp-selector">
+              <div class="cart-wrapper">
+                <!-- Item Cart Off-Canvas Item Image Wrapp Begins Here -->
+                <div class="icart-img-main-wrapp">
+                  <div class="icart-img-selector">
+                    <div class="icart-img-wrap">
+                      <img src="front-01.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Item Cart Off-Canvas Item Image Wrapp End Here -->
+
+                <!-- Item Cart Content Begins Here -->
+                <div class="icart-content-main-wrapp">
+                  <div class="icart-content-selector">
+                    <!-- Item Name Code Begins Here -->
+                    <div class="icart-item-name-wrapp">
+                      <div class="icart-item-name">
+                        <h4>
+                          <a href="#">Utility Denim Jecket - Dark Grey Wash</a>
+                        </h4>
+                      </div>
+                    </div>
+                    <!-- Item Name Code End Here -->
+
+                    <!-- Item Size Code Begins Here -->
+                    <div class="icart-size-main-wrapp">
+                      <div class="icart-size-selector">
+                        <div class="icart-size">
+                          <p class="item-size-wrap">
+                            <strong class="icart-size-text">Size:</strong>
+                            <span class="icart-size-name">Extra Large</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item Size Code End Here -->
+
+                    <!-- Item Price Code Begins Here -->
+                    <div class="icart-price-main-wrapp">
+                      <div class="icart-size-selector">
+                        <div class="icart-price-wrapp">
+                          <p>Rs.3,950</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item Price Code End Here -->
+
+                    <!-- Item Cart Quantity Code Begins Here -->
+                    <div class="icart-quantity-main-wrapp">
+                      <div class="icart-quantity-selector">
+                        <quantity-counter
+                          class="cart__quantity-counter"
+                          data-price="3950"
+                        >
+                          <div class="icart__quantity">
+                            <button
+                              class="icart__quantity-minus"
+                              type="button"
+                              name="decrease"
+                              onclick="decreaseQuantity(this)"
+                            >
+                              <i class="bx bx-minus"></i>
+                            </button>
+                            <input
+                              class="icart__quantity-field"
+                              type="number"
+                              id="quantity"
+                              name="updates[]"
+                              value="1"
+                              pattern="[0-9]*"
+                              readonly
+                            />
+
+                            <button
+                              class="icart__quantity-plus"
+                              type="button"
+                              name="increase"
+                              onclick="increaseQuantity(this)"
+                            >
+                              <i class="bx bx-plus"></i>
+                            </button>
+                          </div>
+                        </quantity-counter>
+                        <!-- Remove Code Here -->
+                        <div class="remove-btn-wrap">
+                          <div class="remove-selector">
+                            <a href="">Remove</a>
+                          </div>
+                        </div>
+                        <!-- Remove code End Here -->
+                      </div>
+                    </div>
+                    <!-- Item Cart Quantity Code End Here -->
+                  </div>
+                </div>
+                <!-- Item Cart Content End Here -->
+              </div>
+            </div>
+            <!-- Item Cart Bottom Code Begins Here -->
+            <div class="icart-bottom-main">
+              <div class="icart-bottom-wrapp">
+                <div class="icart-bottom-selector">
+                  <!-- Item Cart Add Order Notes Code Begins Here  -->
+                  <div class="addodr-note-main">
+                    <div class="addodr-note-wrapp">
+                      <div class="addodr-note-selector">
+                        <form action="">
+                          <details class="add-order">
+                            <summary class="add-order-text">
+                              Add order notes
+                              <span class="icart-note-icon-wrap">
+                                <i
+                                  class="bx bx-plus note-plus"
+                                  id="note-plus"
+                                ></i>
+                                <i
+                                  class="bx bx-minus note-minus"
+                                  id="note-minus"
+                                ></i>
+                              </span>
+                            </summary>
+                            <!-- Note Text Area Code Begins Here -->
+                            <div class="note-text-area-main">
+                              <div class="note-text-area-wrapp">
+                                <label class="label-fornote" for="note"
+                                  >Leave a note about your order</label
+                                >
+                                <textarea name="note" id="note"></textarea>
+                              </div>
+                            </div>
+                            <!-- Note Text Area Code End Here -->
+                          </details>
+                          <!-- Subtotal & Checkout Code Begins Here -->
+                          <div class="subtotal-checkout-main">
+                            <div class="subtotal-checkout-selector">
+                              <div class="subtotal-checkout-wrapp">
+                                <!-- Subtotal Code Begins Here -->
+                                <div class="subtotal-main-wrapp">
+                                  <div class="subtotal-selector">
+                                    <span class="subtotal-text">subtotal</span>
+                                    <span class="subtotal-price">Rs.3,950</span>
+                                  </div>
+                                </div>
+                                <!-- Subtotal Code End Here -->
+                                <!-- Checkout Code Begins Here -->
+                                <div class="checkout-main">
+                                  <div class="checkout-selector">
+                                    <div class="checkout-wrapp">
+                                      <fieldset class="checkout-btn-fieldset">
+                                        <button
+                                          type="submit"
+                                          name="checkout"
+                                          class="checkout-btn"
+                                        >
+                                          Check Out
+                                        </button>
+                                      </fieldset>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Checkout Code End Here -->
+                              </div>
+                            </div>
+                            <em class="emph-note"
+                              >Shipping, taxes, and discount codes are
+                              calculated at checkout</em
+                            >
+                          </div>
+                          <!-- Subtotal & Checkout Code End Here -->
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item Cart Add Order Notes Code End Here  -->
+                </div>
+              </div>
+            </div>
+            <!-- Item Cart Bottom Code End Here -->
+          </div>
+        </div>
+      </div>
+      <!-- Item Cart Off-Canvas Item Cart End Here -->
+    </div>
+    <!-- Item Cart Off-Canvas End Here -->
+
+    <!--Head Section Begins-->
+    <div class="header-section"><p>Free Delivery Nationwide</p></div>
+    <!--Head Section End-->
+
+    <!--Navigation Begins-->
+
+    <div class="header-wrapper">
+      <!--Header Wrapper div Begins-->
+
+      <div class="section-padding">
+        <!--Section padding div Begins-->
+
+        <div class="mobile-header">
+          <!--mobile header div Begins-->
+
+          <div id="mySidenav" class="header-mobile-left">
+            <div class="closebtn"><i class="bx bx-x"></i></div>
+
+            <div class="sidebar-wrapper">
+              <div class="slider-wrapper"><a href="#">HOME</a></div>
+              <div class="slider-wrapper" id="collection">
+                <a href="#"
+                  >COLLECTION 24 <i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- For Collection 24 Submenu Begins -->
+            <div class="collec-submenu">
+              <div class="back-23" id="back-23">
+                <a href="#">
+                  <i class="bx bx-left-arrow-alt"></i> COLLECTION 23
+                </a>
+              </div>
+              <div><a href="jackets.html">JECKTES</a></div>
+              <div><a href="#">SHIRTS</a></div>
+              <div><a href="#">JEANS</a></div>
+              <div><a href="#">SHORTS</a></div>
+              <div><a href="#">BAGS</a></div>
+            </div>
+            <!-- For Collection 24 Submenu End -->
+
+            <div class="sidebar-wrapper">
+              <div class="slider-wrapper"><a href="#">CHAPTER 1</a></div>
+              <div class="slider-wrapper">
+                <a href="#">SHALWAR KAMEEEZ (SALE!!)</a>
+              </div>
+
+              <div class="slider-wrapper" id="men">
+                <a href="#">MEN <i class="bx bx-right-arrow-alt"></i></a>
+              </div>
+            </div>
+
+            <!-- For MEN Submenu Begins -->
+            <div class="men-submenu">
+              <div class="back-men" id="back-men">
+                <a href="#"> <i class="bx bx-left-arrow-alt"></i> MEN </a>
+              </div>
+              <div><a href="#">DENIM JEANS</a></div>
+              <div><a href="jackets.html">DENIM JECKTES</a></div>
+              <div><a href="#">DENIM SHIRTS</a></div>
+              <div><a href="#">SHORTS</a></div>
+              <div><a href="#">BOTTOMS</a></div>
+            </div>
+            <!-- For NEN Submenu End -->
+
+            <div class="sidebar-wrapper">
+              <div class="slider-wrapper" id="accessories">
+                <a href="#"
+                  >ACCESSORIES <i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- For ACCESSORIES Submenu Begins -->
+            <div class="accessories-submenu">
+              <div class="back-accessories" id="back-accessories">
+                <a href="#">
+                  <i class="bx bx-left-arrow-alt"></i> ACCESSORIES
+                </a>
+              </div>
+              <div><a href="#">LAPTOP SLEEVES</a></div>
+              <div><a href="#">BAGS</a></div>
+              <div><a href="#">HANDBAG & CLUTCHES</a></div>
+              <div><a href="#">JA NAMAZ</a></div>
+            </div>
+            <!-- For ACCESSORIES Submenu End -->
+
+            <div class="sidebar-wrapper">
+              <div class="slider-wrapper" id="kid">
+                <a href="#">KIDS <i class="bx bx-right-arrow-alt"></i></a>
+              </div>
+            </div>
+
+            <!-- For KIDS Submenu Begins -->
+            <div class="kid-submenu">
+              <div class="back-kid" id="back-kid">
+                <a href="#"> <i class="bx bx-left-arrow-alt"></i> KIDS </a>
+              </div>
+              <div><a href="#">BOYS</a></div>
+              <div><a href="#">GIRLS</a></div>
+            </div>
+            <!-- For KIDS Submenu End -->
+
+            <div class="sidebar-wrapper">
+              <div class="slider-wrapper"><a href="#">CONTACT</a></div>
+              <div class="slider-wrapper"><a href="#">SHOP</a></div>
+            </div>
+          </div>
+
+          <div class="for-search">
+            <!--For Search div begins-->
+            <button style="cursor: pointer" class="open-nav">
+              <span class="menu-icon open-nav"><i class="bx bx-menu"></i></span>
+            </button>
+            <button style="font-size: 1.7rem" class="search-icon">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+          <!--For Search div End-->
+
+          <div class="header-logo-image">
+            <img src="logo_2.png" alt="" />
+          </div>
+
+          <div class="header-mobile-right">
+            <button class="bag">
+              <i
+                class="bx bx-shopping-bag"
+                style="font-size: 25px; color: rgb(153, 153, 153)"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <!--mobile header div End-->
+      </div>
+      <!--Section padding div End-->
+    </div>
+    <!--Header Wrapper div End-->
+    <!--Navigation End-->
+
+    <!-- form-wrapper-main DIV Begins -->
+    <div class="form-wrapper-main">
+      <div class="form-wrapper-main-for">
+        <!-- Slideshow Gellery Begins -->
+        <div class="main-container-wrapper">
+          <div class="container">
+            <div class="mySlides">
+              <img
+                src="https://thedenimcompany.pk/cdn/shop/files/2_7314bbf2-5326-43fa-a463-49bef4e32a52.jpg?v=1695821812&width=800"
+              />
+            </div>
+
+            <div class="mySlides">
+              <img
+                src="https://thedenimcompany.pk/cdn/shop/files/5_fc206cb4-18ec-4086-bd53-d2473686975c.jpg?v=1695821812&width=800"
+              />
+            </div>
+
+            <div class="mySlides">
+              <img
+                src="https://thedenimcompany.pk/cdn/shop/files/1_293d4b34-f5c6-4531-b76c-d80ff61f730d.jpg?v=1695821812&width=800"
+              />
+            </div>
+
+            <div class="mySlides">
+              <img
+                src="https://thedenimcompany.pk/cdn/shop/files/3_f9e5586e-1f9b-424d-85f6-c807492a0545.jpg?v=1695736102&width=800"
+              />
+            </div>
+
+            <div class="mySlides">
+              <img
+                src="https://thedenimcompany.pk/cdn/shop/files/4_d8a9aa3d-ed42-4349-a03c-ae991409f315.jpg?v=1695736102&width=800"
+              />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"
+              ><i class="bx bx-left-arrow-alt"></i
+            ></a>
+            <a class="next" onclick="plusSlides(1)"
+              ><i class="bx bx-right-arrow-alt"></i
+            ></a>
+
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://thedenimcompany.pk/cdn/shop/files/2_7314bbf2-5326-43fa-a463-49bef4e32a52.jpg?v=1695821812&width=800"
+                  onclick="currentSlide(1)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://thedenimcompany.pk/cdn/shop/files/5_fc206cb4-18ec-4086-bd53-d2473686975c.jpg?v=1695821812&width=800"
+                  onclick="currentSlide(2)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://thedenimcompany.pk/cdn/shop/files/1_293d4b34-f5c6-4531-b76c-d80ff61f730d.jpg?v=1695821812&width=800"
+                  onclick="currentSlide(3)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://thedenimcompany.pk/cdn/shop/files/3_f9e5586e-1f9b-424d-85f6-c807492a0545.jpg?v=1695736102&width=800"
+                  onclick="currentSlide(4)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="https://thedenimcompany.pk/cdn/shop/files/4_d8a9aa3d-ed42-4349-a03c-ae991409f315.jpg?v=1695736102&width=800"
+                  onclick="currentSlide(5)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slideshow Gellery End -->
+
+        <!-- Product Form Begins -->
+
+        <div class="form-wrapper">
+          <div class="form-width">
+            <div class="product-title-wrapper">
+              <h1 class="product-title">
+                <span>Button Down Over Shirt</span>
+              </h1>
+            </div>
+
+            <div class="product-block">
+              <div class="product-price-wrap">
+                <div class="product-price">
+                  <span>Rs.3,150</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="size-chart-wrapper">
+              <div class="size-chart">
+                <button type="button" class="open-size-chart">
+                  <img
+                    src="data:image/png;base64,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"
+                  />
+                  <span> Size Chart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Form Start -->
+            <form id="myForm" action="buyform.html">
+              <div class="product-form-outer">
+                <div class="product-selector">
+                  <div class="product-selector-wrapper">
+                    <span class="size-text">Size</span>
+                    <!-- <small class="size">Extra Large</small> -->
+                    <input
+                      class="size"
+                      type="text"
+                      id="size"
+                      name="size"
+                      placeholder="Size"
+                    />
+                  </div>
+                </div>
+
+                <div class="size-radio-button-wrapper">
+                  <div class="radio__button">
+                    <input
+                      checked
+                      type="radio"
+                      id="type1"
+                      name="type"
+                      value="Extra Small"
+                    />
+                    <label class="label-for-size" data-icon="XS" for="type1"
+                      ><p class="size-opt">XS</p></label
+                    >
+                  </div>
+
+                  <div class="radio__button">
+                    <input
+                      checked
+                      type="radio"
+                      id="type2"
+                      name="type"
+                      value="Small"
+                    />
+                    <label class="label-for-size" data-icon="S" for="type2"
+                      ><p class="size-opt">S</p></label
+                    >
+                  </div>
+
+                  <div class="radio__button">
+                    <input
+                      checked
+                      type="radio"
+                      id="type3"
+                      name="type"
+                      value="Medium"
+                    />
+                    <label class="label-for-size" data-icon="M" for="type3"
+                      ><p class="size-opt">M</p></label
+                    >
+                  </div>
+
+                  <div class="radio__button">
+                    <input
+                      checked
+                      type="radio"
+                      id="type4"
+                      name="type"
+                      value="Large"
+                    />
+                    <label class="label-for-size" data-icon="L" for="type4"
+                      ><p class="size-opt">L</p></label
+                    >
+                  </div>
+
+                  <div class="radio__button">
+                    <input
+                      checked
+                      type="radio"
+                      id="type5"
+                      name="type"
+                      value="Extra Large"
+                    />
+                    <label class="label-for-size" data-icon="XL" for="type5"
+                      ><p class="size-opt">XL</p></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-form-wrapper-main">
+                <div class="product-form-wrapper">
+                  <div class="produt-form-width">
+                    <div class="product-form">
+                      <button
+                        type="button"
+                        id="border"
+                        class="quantity-wrapper select"
+                      >
+                        <span class="qnty-val">
+                          <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            placeholder="Quantity"
+                          /> </span
+                        ><i id="rotate-quantity" class="bx bx-chevron-down"></i>
+                      </button>
+                    </div>
+
+                    <ul class="options-list">
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">1</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">2</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">3</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">4</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">5</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">6</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">7</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">8</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">9</p>
+                          </div></a
+                        >
+                      </li>
+
+                      <li class="qntity-item">
+                        <a
+                          ><div class="for-value">
+                            <p class="option">10</p>
+                          </div></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button class="addtocart-btn" type="submit">
+                    <span class="btn-text">ADD TO CART</span>
+                  </button>
+                </div>
+
+                <button class="buy-now-btn">
+                  <span class="buy-btn-text">BUY IT NOW</span>
+                </button>
+              </div>
+            </form>
+            <!-- Form End -->
+
+            <div class="product-desc-wrapper">
+              <div class="desc-wrapper-width">
+                <ul class="desc-text">
+                  <li>DESCRIPTION</li>
+                </ul>
+              </div>
+
+              <div class="desc-content-wrap">
+                <ul class="desc-content">
+                  <li><span>2 FRONT PATCH POCKETS</span></li>
+                  <li><span>100% COTTON TWILL</span></li>
+                  <li><span>NON STRETCH DENIM FABRIC</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Form End -->
+      </div>
+    </div>
+    <!-- form-wrapper-main DIV End-->
+
+    <!-- Related & Recent Tabs Begins -->
+    <div class="tabs-header-wrapper">
+      <div class="tabs-header-width">
+        <div class="tab-headings">
+          <ul>
+            <li class="related" id="text-related">
+              <span class="tabs-text-related">RELATED PRODUCTS</span>
+            </li>
+            <li class="recently" id="text-recent">
+              <span class="tabs-text-recent">RECENTLY VIEWED</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Related & Recent Tabs End -->
+
+    <!-- Denim Shirts Begins For Related -->
+
+    <div class="main-shirt-card-wrapper">
+      <div class="shirt-card-wrapper">
+        <div class="container-1">
+          <img src="front-01.jpg" alt="Avatar" class="image" />
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <img src="back-02.jpg" alt="Avatar" class="image" />
+
+              <div class="overlay-2">
+                <a href="#"> <button class="text-2">QUICK BUY</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p><a href="#buy">Button Down Over Shirt</a></p>
+        </div>
+
+        <div class="price">
+          <span><a href="#">Rs.3,150</a></span>
+        </div>
+      </div>
+
+      <div class="shirt-card-wrapper">
+        <div class="container-1">
+          <a href="Denim Shirts/For Demo/demo.html"
+            ><img src="b1.jpg" alt="Avatar" class="image"
+          /></a>
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <a href="Denim Shirts/For Demo/demo.html"
+                ><img src="b2.jpg" alt="Avatar" class="image" />
+              </a>
+
+              <div class="overlay-2">
+                <a href="Denim Shirts/For Demo/demo.html">
+                  <button class="text-2">QUICK BUY</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p>
+            <a href="Denim Shirts/For Demo/demo.html">Zipper Down Over Shirt</a>
+          </p>
+        </div>
+
+        <div class="price">
+          <span><a href="Denim Shirts/For Demo/demo.html">Rs.3,150</a></span>
+        </div>
+      </div>
+
+      <div class="shirt-card-wrapper">
+        <div class="container-1">
+          <img src="c1.jpg" alt="Avatar" class="image" />
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <img src="c2.jpg" alt="Avatar" class="image" />
+
+              <div class="overlay-2">
+                <a href="#"> <button class="text-2">QUICK BUY</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p><a href="#buy">Button Down Over Shirt</a></p>
+        </div>
+
+        <div class="price">
+          <span><a href="#">Rs.3,150</a></span>
+        </div>
+      </div>
+
+      <div class="shirt-card-wrapper">
+        <div class="container-1">
+          <img src="c1.jpg" alt="Avatar" class="image" />
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <img src="c2.jpg" alt="Avatar" class="image" />
+
+              <div class="overlay-2">
+                <a href="#"> <button class="text-2">QUICK BUY</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p><a href="#buy">Button Down Over Shirt</a></p>
+        </div>
+
+        <div class="price">
+          <span><a href="#">Rs.3,150</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!--Denim Shirts End-->
+
+    <!-- Denim Shorts Begins For Recently -->
+
+    <div class="main-short-card-wrapper">
+      <div class="short-card-wrapper">
+        <div class="container-1">
+          <img src="Denim Shorts/a1.jpg" alt="Avatar" class="image" />
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <img src="Denim Shorts/a2.jpg" alt="Avatar" class="image" />
+
+              <div class="overlay-2">
+                <a href="#"> <button class="text-2">QUICK BUY</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p><a href="#buy">Button Down Over Shirt</a></p>
+        </div>
+
+        <div class="price">
+          <span><a href="#">Rs.3,150</a></span>
+        </div>
+      </div>
+
+      <div class="short-card-wrapper">
+        <div class="container-1">
+          <img src="Denim Shorts/b1.jpg" alt="Avatar" class="image" />
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <img src="Denim Shorts/b2.jpg" alt="Avatar" class="image" />
+
+              <div class="overlay-2">
+                <a href="#"> <button class="text-2">QUICK BUY</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p><a href="#buy">Button Down Over Shirt</a></p>
+        </div>
+
+        <div class="price">
+          <span><a href="#">Rs.3,150</a></span>
+        </div>
+      </div>
+
+      <div class="short-card-wrapper">
+        <div class="container-1">
+          <img src="Denim Shorts/c1.jpg" alt="Avatar" class="image" />
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <img src="Denim Shorts/c2.jpg" alt="Avatar" class="image" />
+
+              <div class="overlay-2">
+                <a href="#"> <button class="text-2">QUICK BUY</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p><a href="#buy">Button Down Over Shirt</a></p>
+        </div>
+
+        <div class="price">
+          <span><a href="#">Rs.3,150</a></span>
+        </div>
+      </div>
+
+      <div class="short-card-wrapper">
+        <div class="container-1">
+          <img src="Denim Shorts/a1.jpg" alt="Avatar" class="image" />
+
+          <div class="overlay-1">
+            <div class="container-2">
+              <img src="Denim Shorts/a2.jpg" alt="Avatar" class="image" />
+
+              <div class="overlay-2">
+                <a href="#"> <button class="text-2">QUICK BUY</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <p><a href="#buy">Button Down Over Shirt</a></p>
+        </div>
+
+        <div class="price">
+          <span><a href="#">Rs.3,150</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Denim Shorts For Recently End -->
+
+    <!--Footer Begins-->
+
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h2>Quick Links</h2>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2>Policies</h2>
+          <ul class="links">
+            <li><a href="#">Return & Shipping Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2>Social</h2>
+
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h2>Newsletter</h2>
+          <p>
+            Subscribe to get special offers, free giveaways, and
+            once-in-a-lifetime deals.
+          </p>
+
+          <form action="#">
+            <input type="text" placeholder="Email" required />
+            <button type="submit">JOIN</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer End-->
+  </body>
+</html>
+
+<script src="addindexjquery.js"></script>

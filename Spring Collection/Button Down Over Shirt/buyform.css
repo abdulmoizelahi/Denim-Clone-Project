@@ -1,0 +1,1154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* For Header Begins */
+.for-logo img {
+    width: 120px;
+    height: auto;
+  
+  }
+  
+  .form-header {
+  
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  
+  }
+  
+  .cart i {
+    font-size: 1.8rem;
+    display: contents;
+  }
+  .for-cart-1 span i {
+    visibility: hidden;
+  }
+  .for-cart-2 span i {
+  
+  }
+  
+  .for-logo {
+  
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  @media screen and (max-width:992px) {
+  
+    .for-logo {
+      width: 495px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+  }
+  
+  @media screen and (max-width:600px) {
+  
+    .for-logo {
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .for-logo img {
+      width: 100px;
+      height: auto;
+  }
+    
+  }
+  
+  .header-selector {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-header-selector {
+  
+  }
+  
+  header.main-header-wrapper {
+    border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .main-container {
+  display: grid;
+  }
+  /* For Header End */
+  
+  
+  
+  /* For Contact Card & Discount Card Begins */
+
+
+  .contact-heading h2 span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+
+  .email-input input {
+    width: 600px;
+    height: 50px;
+    border: 1px solid rgba(165, 165, 165, 0.418);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .check-box input {
+    accent-color: black;
+    transition: all .2s ease;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    border: 1px solid rgba(165, 165, 165, 0.418);
+    border-radius: 2px;
+  }
+
+  .checkbox {
+    width: 17px;
+    height: 17px;
+
+  }
+
+  .checkbox:checked {
+    background-color: black;
+  }
+
+  .check-box label {
+    padding-left: .7rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+.just-height {
+    height: 15px;
+  }
+
+.email-checkbox-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.checkbox:checked::after {
+    content: '\2713'; /* Unicode checkmark character */
+    font-size: 14px; /* Adjust size of the checkmark */
+    color: white; /* Color of the checkmark */
+    padding: 2px;
+
+}
+
+
+.validation-form-wrapper {
+  display: flex;
+  width: 2000px;
+  justify-content: flex-end;
+}
+
+/* Check Laptop Responsive */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .validation-form-wrapper {
+    display: flex;
+    width: 1350px;
+    justify-content: flex-end;
+  }
+}
+/* End Here Laptop Responsive */
+
+
+.card-wrapper {
+    gap: 30px;
+    align-items: center;
+    display: flex;
+/*     width: 400px;
+    justify-content: center; */
+    padding: 35px 35px 20px 35px;
+}
+
+.main-validation-form {
+    justify-content: center;
+    display: flex;
+}
+
+.main-discount-card {
+    width: 100%;
+    background-color: rgba(250, 250, 250);
+    border-left: 1px solid rgba(165, 165, 165, 0.418);
+}
+
+/* Check For Laptop Responsive */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .main-discount-card {
+    width: 75%;
+
+}
+}
+/* Check For Laptop Responsive End Here*/
+
+/* .discount-card-wrapper {
+  max-width: 550px;
+} */
+
+.validation-form {
+  padding: 35px;
+}
+
+.card-wrapper p {
+  font:small-caption
+}
+
+.for-picture picture img {
+  border-radius: 5px;
+}
+
+.text-size span p {
+  color:rgba(165, 165, 165, 0.856) ;
+}
+
+.price {
+  margin-left: 7rem;
+}
+
+.discount-input input {
+  width: 350px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  padding: 10px;
+}
+
+.apply-button button {
+  width: 70px;
+  height: 45px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  font-size: .9rem;
+  font-weight: 600;
+  color: grey;
+}
+
+.discount-input-wrap {
+  display: flex;
+  gap: 1rem;
+  padding: 20px 35px 20px 35px;
+}
+
+.demo-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Check For Laptop Responsive */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .demo-div {
+    display: block;
+  }
+}
+/* Check For Laptop Responsive End Here*/
+
+.subtotal-wrapper {
+  font-family: math;
+  padding: 5px 35px;
+  gap: 19rem;
+  display: flex;
+  align-items: center;
+}
+
+.subtotal-price {
+  color: #000000a3;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.subtotal-text {
+  opacity: 65%;
+}
+
+.shipping-wrapper {
+  font-family: math;
+  padding: 5px 35px;
+  gap: 21rem;
+  display: flex;
+  align-items: center;
+}
+
+.shipping-price {
+  color: #000000a3;
+  font-size: .8rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.shipping-text {
+  opacity: 65%;
+}
+
+.total-wrapper {
+  display: flex;
+  padding: 10px 35px;
+  gap: 15rem;
+  align-items: center;
+}
+
+.total-price- {
+  align-items: flex-end;
+  gap: 1rem;
+  display: flex;
+}
+
+.total-price-wrapper .rs-text {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+.total-price-wrapper .pkr-text {
+  opacity: 65%;
+  font-family: math;
+  font-size: .8rem;
+}
+.total-text {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.just-for-height {
+  height: 40px;
+}
+
+.delivery-heading h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.country-select-input .select {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+}
+
+.country-select-input label {
+  padding: 7px 10px 7px 15px;
+  font-family: monospace;
+  opacity: 65%;
+  font-size: .8rem;
+  position: absolute;
+}
+
+.delivery-wrapper {
+  gap: 15px;
+  flex-direction: column;
+  display: flex;
+}
+
+.firstnlast-name-wrap-main .first-name,.last-name {
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.firstnlast-name-wrap-main {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+.delivery-form {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+}
+
+input.address {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.apartment-etc {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.citynpost-wrap-main {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+input.city-name {
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.postal-code {
+  width: 290px;
+  height: 50px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.phone {
+  border-right: none;
+  width: 570px;
+  height: 50px;
+  border: none;
+/*   border-top: 1px solid rgba(165, 165, 165, 0.418);
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+  border-left: 1px solid rgba(165, 165, 165, 0.418); */
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+}
+
+.for-phone {
+  display: flex;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+span.info-icon {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -11px;
+  right: -7px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  background-color: rgb(0 0 0 / 56%);
+  color: white;
+}
+
+.notification {
+  
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.for-phone-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.forsave-check-box {
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+}
+
+label.forsave-label {
+  padding-left: .7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input.checkbox-forsave {
+  height: 17px;
+  width: 17px;
+  accent-color: black;
+  transition: all .2s ease;
+  -moz-appearance: none;
+  /* -webkit-appearance: none; */
+  -o-appearance: none;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 2px;
+}
+
+.for-shipping-method {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 18px 10px 18px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  color: #000000e0;
+  background-color: #8f8f8f17;
+}
+
+.shipmethod-free {
+  font-family: revert;
+  font-weight: 600;
+}
+
+.shipping-method-heading h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.for-phone-wrap-main {
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+}
+
+.shipping-mathod-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.height-for-payment {
+  height: 45px;
+}
+
+.payment-heading h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .1rem;
+}
+
+.payment-point p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+}
+
+.payment-heading-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.cod {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 18px 10px 18px;
+  align-items: center;
+  color: #000000e0;
+  display: flex;
+  align-items: center;
+  background-color: #8f8f8f17;
+}
+
+.payment-card-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.billing-heading h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cod-wrapp-main {
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+}
+
+.billing-address-wrap {
+  flex-direction: column;
+  display: flex;
+  gap: 13px;
+}
+
+.same {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 60px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 18px 10px 18px;
+  align-items: center;
+  color: #000000e0;
+  display: flex;
+  align-items: center;
+  background-color: #8f8f8f17;
+}
+
+.diff {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  height: 60px;
+  border-left:1px solid rgba(165, 165, 165, 0.418) ;
+  border-right: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 0px;
+  padding: 10px 18px 10px 18px;
+  align-items: center;
+  color: #000000e0;
+  display: flex;
+  align-items: center;
+  background-color: #8f8f8f17;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+}
+
+label .same-input,
+.diff-input
+ {
+	 position: absolute;
+	 visibility: hidden;
+}
+ 
+ .diff-input:checked + span:before {
+	 box-shadow: inset 0 0 0 0.4550rem black;
+}
+
+.same-input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4550rem black;
+}
+
+.diff-span:before {
+	 display: flex;
+	 flex-shrink: 0;
+	 content: "";
+	 background-color: #fff;
+	 width: 1.3rem;
+	 height: 1.3rem;
+	 border-radius: 50%;
+	 margin-right: 0.375em;
+	 transition: .4s ease;
+	 box-shadow: inset 0 0 0 0.100rem black;
+}
+
+.same-span:before {
+	 display: flex;
+	 flex-shrink: 0;
+	 content: "";
+	 background-color: #fff;
+	 width: 1.3rem;
+	 height: 1.3rem;
+	 border-radius: 50%;
+	 margin-right: 0.375em;
+	 transition: .4s ease;
+	 box-shadow: inset 0 0 0 0.100rem black;
+}
+
+span.same-span {
+  align-items: center;
+  display: flex;
+}
+
+span.diff-span {
+  align-items: center;
+  display: flex;
+}
+
+.different-address {
+  border-radius: 0px 0px 8px 8px;
+  background-color: #8f8f8f17;
+  /* border: 1px solid rgba(165, 165, 165, 0.418); */
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+  border-left: 1px solid rgba(165, 165, 165, 0.418);
+  border-right: 1px solid rgba(165, 165, 165, 0.418);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.country-select-input-2 .select-2 {
+  width: 550px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+}
+
+.country-select-input-2 label {
+  padding: 7px 10px 7px 15px;
+  font-family: monospace;
+  opacity: 65%;
+  font-size: .8rem;
+  position: absolute;
+}
+
+.firstnlast-name-wrap-main-2 .first-name-2,.last-name-2 {
+  width: 265px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.firstnlast-name-wrap-main-2 {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+input.address-2 {
+  width: 550px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.add-icon i {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.add-apart-text {
+  font-size: 1rem;
+  color:rgb(58, 57, 57) ;
+}
+
+.add-apart-btn {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+span.add-icon {
+  align-items: flex-end;
+  display: flex;
+}
+
+input.apartment-etc-2 {
+  width: 550px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.citynpost-wrap-main-2 {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+
+input.city-name-2 {
+  width: 265px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.postal-code-2 {
+  width: 265px;
+  height: 55px;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input.phone-2 {
+  border-right: none;
+  width: 515px;
+  height: 50px;
+  border: none;
+/*   border-top: 1px solid rgba(165, 165, 165, 0.418);
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+  border-left: 1px solid rgba(165, 165, 165, 0.418); */
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+}
+
+.for-phone-2 {
+  display: flex;
+  border: 1px solid rgba(165, 165, 165, 0.418);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  background-color: white;
+}
+
+span.info-icon-2 {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.height-for-complete-order {
+  height: 35px;
+}
+
+.complete-order-btn {
+  height: 65px;
+  width: 600px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* For Contact Card & Discount Card End */
+
+/* RWD For Contact & Discount Card Begins */
+
+@media screen and (max-width:1024px) {
+
+.email-input input {
+  width: 300px;
+}
+
+.price {
+  margin-left: 1rem;
+}
+.card-wrapper {
+  gap: 15px;
+}
+.discount-input input {
+  width: 230px;
+}
+
+.apply-button button {
+  width: 60px;
+}
+
+.main-discount-card {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  background-color: rgba(250, 250, 250);
+  border-right: 1px solid rgba(165, 165, 165, 0.418);
+}
+
+.validation-form-wrapper {
+ /*  display: block;
+justify-content: flex-end; */
+width: 100%;
+justify-content: center;
+display: flex;
+}
+
+.main-validation-form {
+display: flex;
+flex-direction: column-reverse;
+}
+
+
+.demo-div {
+display: flex;
+justify-content: center;
+}
+
+.form-header {
+  gap: 30px;
+}
+
+.country-select-input .select {
+  width: 300px;
+}
+
+.firstnlast-name-wrap-main .first-name, .last-name {
+  width: 300px;
+}
+
+.firstnlast-name-wrap-main {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+
+input.address {
+  width: 300px;
+}
+
+input.apartment-etc {
+  width: 300px;
+}
+
+.citynpost-wrap-main {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+
+input.city-name {
+  width: 300px;
+}
+
+input.postal-code {
+  width: 300px;
+}
+
+
+input.phone {
+  width: 260px;
+}
+
+.for-phone {
+  width: 300px;
+}
+
+.for-shipping-method {
+  width: 300px;
+  font-size: .8rem;
+  border: 1.5px solid black;
+}
+
+.cod {
+  font-size: .8rem;
+  width: 300px;
+  border: 1.5px solid black;
+  padding: 10px 18px 10px 18px;
+}
+
+.same {
+  font-size: .8rem;
+  width: 300px
+}
+
+.diff {
+  font-size: .8rem;
+  width: 300px;
+}
+
+.complete-order-btn {
+  width: 300px;
+  font-size: 1.1rem;
+}
+
+.country-select-input-2 .select-2 {
+  width: 260px;
+}
+
+.firstnlast-name-wrap-main-2 .first-name-2, .last-name-2 {
+  width: 260px;
+}
+
+.firstnlast-name-wrap-main-2 {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+}
+
+input.address-2 {
+  width: 260px;
+}
+
+input.apartment-etc-2 {
+  width: 260px;
+}
+
+.citynpost-wrap-main-2 {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+}
+
+input.city-name-2 {
+  width: 260px;
+}
+
+input.postal-code-2 {
+  width: 260px;
+}
+
+.for-phone-2 {
+  width: 260px;
+}
+
+input.phone-2 {
+  width: 230px;
+}
+
+.different-address {
+  padding: 19px;
+}
+
+.another {
+  justify-content: center;
+  display: flex;
+}
+
+.validation-form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+  
+}
+
+
+
+
+
+@media screen and (max-width:992px) {
+
+  .subtotal-wrapper {
+    gap: 10.8rem;
+  }
+
+  .shipping-wrapper {
+    gap: 13rem;
+  }
+
+  .total-wrapper {
+    gap: 6.1rem;
+  }
+  
+}
+
+
+@media screen and (max-width:600px) {
+
+.demo-div {
+    display: flex;
+    justify-content: center;
+}
+
+.email-input input {
+  width: 270px;
+}
+
+.price {
+  margin-left: .8rem;
+}
+.card-wrapper {
+  gap: 11px;
+}
+.discount-input input {
+  width: 200px;
+}
+
+.apply-button button {
+  width: 55px;
+}
+
+.main-discount-card {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  background-color: rgba(250, 250, 250);
+  border-right: 1px solid rgba(165, 165, 165, 0.418);
+}
+
+.validation-form-wrapper {
+ /*  display: block;
+justify-content: flex-end; */
+width: 100%;
+justify-content: center;
+display: flex;
+}
+
+.main-validation-form {
+display: flex;
+flex-direction: column-reverse;
+}
+
+
+.demo-div {
+display: flex;
+justify-content: center;
+}
+
+.form-header {
+  gap: 30px;
+}
+
+.total-wrapper {
+ gap: 4rem 
+}
+
+.shipping-wrapper {
+gap: 10.8rem;
+}
+
+.subtotal-wrapper {
+  gap: 8.6rem;
+}
+
+
+
+
+  
+}
+
+
+/* RWD For Contact & Discount Card End */
+
+
+
+/* For Jquery Classes Begins */
+
+.for-apartment-etc-wrap-main-2 {
+  display: none;
+}
+
+.for-apartment-etc-wrap-main-2.showappart {
+  display: block;
+}
+
+.add-appaertment-wrap-main.removeappart {
+  display: none;
+}
+
+.diff-address-wrap-main {
+  content-visibility: hidden;
+}
+
+.diff-address-wrap-main.showbilling-card {
+  content-visibility: visible;
+  transition: all .4s ease-in;
+}
+
+.diff.for-border {
+  border-bottom: 1px solid rgba(165, 165, 165, 0.418);
+}
+
+/* For Jquery Classes End */
+
+
+/* For Form Validation Classes Begins */
+
+
+.form-field.error .error-text {
+  display: block;
+}
+
+form .field-item.error {
+  border-color: red;
+}
+
+.error-text {
+  font-size: .875rem;
+  color: red;
+  margin: 5px 0 0;
+  display: none;
+}
+/* For Form Validation Classes End */

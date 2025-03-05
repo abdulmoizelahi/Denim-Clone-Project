@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buyform.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="addindexjquery.js"></script>
+    <script src="formvalidate.js"></script>
+    
+</head>
+<body>
+ <form action="#">   
+<div class="main-page-wrapper">
+
+    <!-- For Header Begins -->
+    <div class="main-container">
+
+        <header class="main-header-wrapper">
+            <div class="main-header-selector">
+
+                <div class="header-selector">
+
+                    <header class="form-header">
+
+                    <div class="for-cart-1">
+                        <span class="cart"><i class='bx bx-shopping-bag'></i></span>
+                    </div>
+
+                    <div class="for-logo">
+                        <img src="https://cdn.shopify.com/s/files/1/0603/7041/9869/files/TDC_Logo_copy_x320.png?v=1642860809">
+                    </div>
+
+                    <div class="for-cart-2">
+                        <span class="cart"><i class='bx bx-shopping-bag'></i></span>
+                    </div>
+
+
+                    </header>
+
+
+
+                </div>
+
+            </div>
+        </header>
+
+    </div>
+    <!-- For Header End -->
+
+
+
+<!-- Another Demo div -->
+<div class="another">
+<!-- Demi Div -->
+<div class="demo-div">
+    <!-- For Validation Form & Discount Card Begins -->
+    <div class="main-validation-form">
+
+         <!-- div For Extra Gap  -->
+         <div class="extra-gap"></div>
+
+
+
+
+        <!-- Validation Form Begins -->
+        <div class="validation-form-wrapper">
+            <div class="validation-form">
+
+
+
+                <div class="contact-heading">
+                    <h2><span>Contact</span></h2>
+                </div>
+
+                <div class="just-height"></div>
+
+            <div class="email-checkbox-wrap">
+
+
+                <div class="email-input form-field">
+                    <input type="email" placeholder="Email" name="" class="email field-item" id="email">
+                    <div  class="error-text email">Please enter your email</div>
+                </div>
+
+            <div class="input-wrapper">
+
+                <div class="check-box">
+                    <input type="checkbox" class="checkbox">
+                    <label class="for-form-label" for="label">Email me with news and offers</label>
+                </div>
+
+                
+            </div>
+
+
+
+            </div>
+
+
+            <div class="just-for-height"></div>
+
+            <div class="delivery-card-wrap-main">
+                <div class="delivery-wrapper">
+
+
+                    <div class="delivery-heading-wrap">
+                        <div class="delivery-heading"><h2 class="delivery-text">Delivery</h2></div>
+                    </div>
+
+                    <div class="delivery-form-wrapper">
+
+                        <div class="delivery-form">
+
+
+                            <div class="country-select-input">
+                                <label for="select0">
+                                    <span class="label-wrap">
+                                        <span class="label-text">Country/Region</span>
+                                    </span>
+                                </label>
+                                <select name="countyCode" id="select0" class="select">
+                                    <option value="PK">Pakistan</option>
+                                </select>
+                            </div>
+
+
+                            <div class="firstnlast-name-wrap-main">
+                                <div class="for-first-name">
+                                    <div class="first-name-wrap form-field">
+                                        <input id="firstname" class="first-name field-item" type="text" placeholder="First Name">
+                                        <div class="error-text">Please enter your first name</div>
+                                    </div>
+                                </div>
+                                <div class="for-last-name">
+                                    <div class="last-name-wrap form-field">
+                                        <input id="lastname" class="last-name field-item" type="text" placeholder="Last Name">
+                                        <div class="error-text">Please enter your last name</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="for-address-wrap-main">
+                                <div class="for-address-wrap">
+                                    <div class="for-address form-field">
+                                        <input id="address" class="address field-item" type="text" placeholder="Address">
+                                        <div class="error-text">Please enter your address</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="for-apartment-etc-wrap-main">
+                                <div class="for-apartment-etc-wrap">
+                                    <div class="for-apartment-etc form-field">
+                                        <input id="apartment" class="apartment-etc field-item" type="text" placeholder="Apartment, suite,etc">
+                                        <div class="error-text">Please enter your apartment, etc.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="citynpost-wrap-main">
+
+                                <div class="for-city-name-wrap">
+                                    <div class="for-city-name form-field">
+                                        <input id="cityname" class="city-name field-item" type="text" placeholder="City Name">
+                                        <div class="error-text">Please enter your city name</div>
+                                    </div>
+                                </div>
+
+                                <div class="for-postal-code-wrap">
+                                    <div class="for-postal-code form-field">
+                                        <input id="postalcode" class="postal-code field-item" type="text" placeholder="Postal Code">
+                                        <div class="error-text">Please enter your postal code</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="for-phone-wrap-main">
+
+                                <div class="for-phone-wrap">
+
+                                    <div class="for-phone form-field">
+                                
+                                        <input id="phone" class="phone field-item" type="text" placeholder="Phone">
+                                        <span class="info-icon"><i class='bx bx-info-circle'></i></span>
+                                    
+                                    </div>
+                                    <div class="error-text">Please enter your phone number</div>
+
+
+                                    <div class="forsave-info-wrapper">
+
+                                        <div class="forsave-check-box">
+                                            <input type="checkbox" class="checkbox-forsave">
+                                            <label class="forsave-label" for="label">Save this information for next time</label>
+                                        </div>
+                        
+                                        
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="shipping-method-wrap-main">
+                                    <div class="shipping-mathod-wrap">
+
+                                        <div class="shipping-method-heading">
+                                            <h3>Shipping method</h3>
+                                        </div>
+
+                                        <div class="for-shipping-method">
+
+                                            <div class="shipping-method">
+                                                <p>Standard</p>
+                                            </div>
+
+                                            <div class="shipmethod-free">
+                                                <span>Free</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+                    
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+            <div class="height-for-payment"></div>
+
+
+            <div class="payment-card-wrapp-main">
+                
+                <div class="payment-card-wrapp">
+
+
+
+
+                    <div class="payment-heading-wrapp">
+                        <div class="payment-heading">
+                            <h2>Payment</h2>
+                        </div>
+
+                        <div class="payment-point">
+                            <span class="point-text"><p>All transactions are secure and encrypted.</p></span>
+                        </div>
+                    </div>
+
+
+                    <div class="cod-wrapp-main">
+
+                        <div class="cod-wrapp">
+                            <div class="cod">
+                                <span>Cash on Delivery (COD)</span>
+                            </div>
+                        </div>
+
+
+                        <div class="billing-address-wrap-main">
+
+                            <div class="billing-address-wrap">
+
+                                <div class="billing-heading"><h2>Billing Address</h2></div>
+
+                                <div class="same-and-diff-wrapp-main">
+
+                                    <div class="same-and-diff">
+
+                                        <div class="same-wrap">
+                                            <div class="same">
+
+                                                <label class="label-same">
+                                                <input type="radio" class="same-input" name="radio" id="for-same" checked>
+                                                <span class="same-span">Same as shipping address</span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                        <div class="diff-wrap">
+                                            <div class="diff">
+
+                                                <label class="label-diff">
+                                                <input type="radio" class="diff-input" name="radio" id="for-diff">
+                                                <span class="diff-span">Use a different billing address</span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="diff-address-wrap-main">
+                    <div class="diff-address-wrap">
+
+
+                            <div class="different-address">
+
+                                <div class="country-select-input-2">
+                                    <label for="select1">
+                                        <span class="label-wrap-2">
+                                            <span class="label-text-2">Country/Region</span>
+                                        </span>
+                                    </label>
+                                    <select name="countyCode-2" id="select0" class="select-2">
+                                        <option value="PK-diff">Pakistan</option>
+                                    </select>
+                                </div>
+
+                                <div class="firstnlast-name-wrap-main-2">
+                                    <div class="for-first-name-2">
+                                        <div class="first-name-wrap-2">
+                                            <input class="first-name-2" type="text" placeholder="First Name">
+                                            <span id="firstnameerr2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="for-last-name-2">
+                                        <div class="last-name-wrap-2">
+                                            <input class="last-name-2" type="text" placeholder="Last Name">
+                                            <span id="lastnameerr2"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="for-address-wrap-main-2">
+                                    <div class="for-address-wrap-2">
+                                        <div class="for-address-2">
+                                            <input class="address-2" type="text" placeholder="Address">
+                                            <span id="addresserr2"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="add-appaertment-wrap-main">
+                                    <div class="add-appartment">
+                                        <div class="appartment">
+                                            <button class="add-apart-btn">
+                                                <span class="add-icon"><i class='bx bx-plus'></i></span>
+                                                <span class="add-apart-text">Add apartment, suite, etc.</span>
+                                            </button>
+                                            <span id="apparterr2"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="for-apartment-etc-wrap-main-2">
+                                    <div class="for-apartment-etc-wrap-2">
+                                        <div class="for-apartment-etc-2">
+                                            <input class="apartment-etc-2" type="text" placeholder="Apartment, suite,etc &nbsp;(Optional)">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="citynpost-wrap-main-2">
+
+                                    <div class="for-city-name-wrap-2">
+                                        <div class="for-city-name-2">
+                                            <input class="city-name-2" type="text" placeholder="City Name">
+                                            <span id="cityerr2"></span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="for-postal-code-wrap-2">
+                                        <div class="for-postal-code-2">
+                                            <input class="postal-code-2" type="text" placeholder="Postal Code">
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                                <div class="for-phone-2">
+                                
+                                    <input class="phone-2" type="text" placeholder="Phone &nbsp;(Optional)">
+                                    <span class="info-icon-2"><i class='bx bx-info-circle'></i></span>
+                                
+                                </div>
+
+
+                            
+
+
+
+
+                            </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="height-for-complete-order"></div>
+
+                <div class="complete-order-wrap-main">
+                    <div class="complete-order-wrap">
+                        <button type="submit" class="complete-order-btn" value="CompOrder">Complete order</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            
+
+
+
+
+
+            </div>
+        </div>
+        <!-- Validation Form End -->
+
+
+        <!-- Discount Card Begins -->
+        <div class="main-discount-card">
+
+
+
+            <div class="discount-card-wrapper">
+
+                <div class="card-wrapper">
+
+                    <div class="for-picture">
+                     <picture>
+                        <a href="#" class="notification">
+                        <img src="https://cdn.shopify.com/s/files/1/0603/7041/9869/files/2_7314bbf2-5326-43fa-a463-49bef4e32a52_64x64.jpg?v=1695821812"></img>
+                        <!-- <span class="badge" id="quantity">1</span> -->
+                        <span class="badge" id="quantity">1</span>
+                        </a>
+                     </picture>
+                    </div>
+
+                    <div class="text-wrapper">
+
+                    <div class="text">
+
+                        <span><p>Button Down Over Shirt</p></span>
+
+                    </div>
+
+                    <div class="text-size">
+                        <span><p id="size">XS</p></span>
+                    </div>
+
+                     </div>
+
+                    <div class="price">
+                        <span><p>Rs&nbsp 3,150.00</p></span>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                
+                <div class="discount-input-wrap">
+
+                    <div class="discount-input">
+                        <input type="text" name="" id="" placeholder="Discount Code">
+                    </div>
+
+                    <div class="apply-button">
+                        <button type="button">Apply</button>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="subtotal-main-wrapper">
+                    <div class="subtotal-wrapper">
+                        <div class="subtotal-text"><span>Subtotal</span></div>
+                        <div class="subtotal-price"><span>Rs&nbsp;&nbsp;3,150.00</span></div>
+                    </div>
+                </div>
+
+
+                <div class="shipping-main-wrapper">
+                    <div class="shipping-wrapper">
+                        <div class="shipping-text"><span>Shipping</span></div>
+                        <div class="shipping-price"><span>FREE</span></div>
+                    </div>
+                </div>
+
+
+                <div class="total-main-wrapper">
+                    <div class="total-wrapper">
+                        <div class="total-text"><span>Total</span></div>
+                        <div class="total-price-wrapper">
+                            <div class="total-price-">
+                                <span class="pkr-text">PKR</span>
+                                <strong class="rs-text">Rs&nbsp;3,150.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <!-- Discount Card End -->
+
+
+
+
+
+
+
+
+    </div>
+    <!-- For Validation Form Begins -->
+</div>
+<!-- Demo div End -->
+
+</div>
+<!-- Another Demo Div End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</form>
+</body>
+</html>
+
+<script src="addindexjquery.js"></script>
