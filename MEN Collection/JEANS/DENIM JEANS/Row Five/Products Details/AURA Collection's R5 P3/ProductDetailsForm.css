@@ -2144,7 +2144,7 @@ span.size-text {
 
 .quantity-wrapper span,
 i {
-  color: rgba(0, 0, 0, 0.45);
+  /*   color: rgba(0, 0, 0, 0.45); */
   font-weight: lighter;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -3048,16 +3048,15 @@ li::marker {
   .product-single-image:hover .next {
     right: 1px;
     transform: translateY(-50%) translateX(0);
-}
+  }
 }
 
 @media screen and (max-width: 600px) {
   .product-single-image:hover .next {
     right: 20px;
     transform: translateY(-50%) translateX(0);
+  }
 }
-}
-
 
 /* Ultra-Wide Screens: 1920px and above */
 @media screen and (min-width: 1920px) {

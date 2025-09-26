@@ -2144,7 +2144,7 @@ span.size-text {
 
 .quantity-wrapper span,
 i {
-  color: rgba(0, 0, 0, 0.45);
+  /*   color: rgba(0, 0, 0, 0.45); */
   font-weight: lighter;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -2758,8 +2758,6 @@ li::marker {
   .main-related-card-wrapper {
     margin: 2rem 0rem;
   }
-
-
 }
 
 /* Small Devices: Smartphones in portrait mode (max-width: 600px) */
@@ -2785,8 +2783,6 @@ li::marker {
     user-select: none;
     -webkit-user-drag: none;
   }
-
-
 }
 
 /* Media Queries End */
@@ -3048,21 +3044,19 @@ li::marker {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .product-single-image:hover .next {
     right: 1px;
     transform: translateY(-50%) translateX(0);
-}
+  }
 }
 
 @media screen and (max-width: 600px) {
   .product-single-image:hover .next {
     right: 20px;
     transform: translateY(-50%) translateX(0);
+  }
 }
-}
-
 
 /* Ultra-Wide Screens: 1920px and above */
 @media screen and (min-width: 1920px) {
