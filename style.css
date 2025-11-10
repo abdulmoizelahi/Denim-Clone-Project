@@ -151,16 +151,6 @@ span.menu-icon i:hover {
   display: none;
 }
 
-.back-23 {
-  /*  margin-right: 120px; */
-}
-
-/* .back-23 a:hover  {
-
-    background-color: #111;
-
-} */
-
 /* For Collection 24 Submenu End */
 
 /* For MEN submenu Begins */
@@ -2077,45 +2067,41 @@ button .close-cart-i i:hover {
 
 /* Extra Extra Large Devices: 1600px and above (Big Monitors) */
 @media screen and (min-width: 1600px) {
-  
   .main-Spring-card-wrapper {
     gap: 16px;
   }
   .Spring-card-wrapper .container-1 {
-
     width: 355px;
     height: 495px;
-}
+  }
 
-.Spring-card-wrapper .title {
-  width: 325px;
-  height: 40px;
-  margin: 1rem 0.9375rem 0rem 0.9375rem;
-}
+  .Spring-card-wrapper .title {
+    width: 325px;
+    height: 40px;
+    margin: 1rem 0.9375rem 0rem 0.9375rem;
+  }
 
-.Spring-card-wrapper .price {
-  height: 20px;
-}
+  .Spring-card-wrapper .price {
+    height: 20px;
+  }
 
-.main-arrival-card-wrapper {
-  gap: 16px;
-}
-.arrival-card-wrapper .container-1 {
+  .main-arrival-card-wrapper {
+    gap: 16px;
+  }
+  .arrival-card-wrapper .container-1 {
+    width: 355px;
+    height: 495px;
+  }
 
-  width: 355px;
-  height: 495px;
-}
+  .arrival-card-wrapper .title {
+    width: 325px;
+    height: 40px;
+    margin: 1rem 0.9375rem 0rem 0.9375rem;
+  }
 
-.arrival-card-wrapper .title {
-width: 325px;
-height: 40px;
-margin: 1rem 0.9375rem 0rem 0.9375rem;
-}
-
-.arrival-card-wrapper .price {
-height: 20px;
-}
-
+  .arrival-card-wrapper .price {
+    height: 20px;
+  }
 }
 
 /* Ultra-Wide Screens: 1920px and above */
@@ -2123,22 +2109,22 @@ height: 20px;
   .Spring-card-wrapper .container-1 {
     width: 435px;
     height: 605px;
-}
+  }
 
-.Spring-card-wrapper .title {
-  width: 395px;
-  height: 40px;
-  margin: 1rem 1.25rem 0rem 1.25rem;
-}
+  .Spring-card-wrapper .title {
+    width: 395px;
+    height: 40px;
+    margin: 1rem 1.25rem 0rem 1.25rem;
+  }
 
-.arrival-card-wrapper .container-1 {
-  width: 435px;
-  height: 605px;
-}
+  .arrival-card-wrapper .container-1 {
+    width: 435px;
+    height: 605px;
+  }
 
-.arrival-card-wrapper .title {
-width: 395px;
-height: 40px;
-margin: 1rem 1.25rem 0rem 1.25rem;
-}
+  .arrival-card-wrapper .title {
+    width: 395px;
+    height: 40px;
+    margin: 1rem 1.25rem 0rem 1.25rem;
+  }
 }
